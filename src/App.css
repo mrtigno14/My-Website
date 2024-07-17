@@ -6,3 +6,41 @@ body.dark-mode {
   background-color: #121212;
   color: #ffffff;
 }
+
+.content {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 0 100px; /* Add horizontal padding if needed */
+  margin-top: 100px; /* Adjust top margin if needed */
+}
+
+/* Text content styling */
+.text-content {
+  margin-left: 50px; /* Space between text and image */
+  margin-top: -220px;
+}
+
+.name-header {
+  font-size: 69px;
+  font-weight: bold;
+  /*text-align: left;*/
+  margin: 0;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: -310px;
+}
+
+.little-about{
+  
+}
+
+.image-container img {
+  width: 400px; /* Set a specific width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+  margin-left: 220px;
+}
