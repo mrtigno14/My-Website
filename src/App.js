@@ -8,9 +8,10 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="content">
-      <div className="image-container">
-          <img src="/profilepic.jpg" alt="Profile" />
-        </div>
+      
+          <div className="blob"></div>
+          
+        
         <div className="text-content">
           <div className="name-header">
             Marc Russel Tigno
@@ -19,7 +20,7 @@ function App() {
             Computer Engineer
           </div>
           <div className="little-about">
-            Hiii
+            Hello World
           </div>
         </div>
         
