@@ -2,17 +2,25 @@
   text-align: center;
 }
 
+/* DARK MODE */
+
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
 }
 
+body.dark-mode .social-media-icons a{
+  color: white;
+}
+
+/* DARK MODE */
+
 .content {
   display: flex;
   align-items: center; /* Center items vertically */
   justify-content: flex-start; /* Align items to the left */
-  padding: 0 100px; /* Add horizontal padding if needed */
-  margin-top: 100px; /* Adjust top margin if needed */
+  padding: 0 50px; /* Add horizontal padding if needed */
+  margin-top: 69px; /* Adjust top margin if needed */
 }
 
 /* Text content styling */
@@ -24,7 +32,6 @@ body.dark-mode {
 .name-header {
   font-size: 69px;
   font-weight: bold;
-  /*text-align: left;*/
   margin: 0;
 }
 
@@ -53,6 +60,17 @@ body.dark-mode {
   transition: all 1s ease-in-out;
 }
 
+.singleCol {
+  max-width: 750px;
+  margin-top: 120px;
+  margin-left: -585px;
+}
+
+.social-media-icons a{
+  color: black;
+  font-size: 2rem;
+  margin: 0 10px;
+}
 
 @keyframes animate{
   0%, 100%{
