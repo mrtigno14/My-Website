@@ -11,12 +11,12 @@ import Navbar from './components/Navbar';
 function App() { 
   return  (
     <div className="App">
+      <div className="home-container">
       <Navbar />
+  
       <div className="content">
-      
+
           <div className="blob"></div>
-          
-        
         <div className="text-content">
           <div className="name-header">
             Marc Russel Tigno
@@ -35,9 +35,9 @@ function App() {
         <a href="https://www.linkedin.com/in/marc-russel-tigno-a7b34423a">
         <FontAwesomeIcon icon={faLinkedin} />
         </a>
-
         </div>
-
+        
+      </div>
       </div>
     </div>
   );

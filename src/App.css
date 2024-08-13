@@ -4,7 +4,7 @@
 
 /* DARK MODE */
 
-body.dark-mode {
+body.dark-mode .home-container{
   background-color: #121212;
   color: #ffffff;
 }
@@ -70,6 +70,11 @@ body.dark-mode .social-media-icons a{
   color: black;
   font-size: 2rem;
   margin: 0 10px;
+}
+
+.home-container {
+  background-color: whitesmoke; /* Light blue */
+  height: 100vh; /* Full viewport height */
 }
 
 @keyframes animate{
