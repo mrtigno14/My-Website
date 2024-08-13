@@ -77,6 +77,11 @@ body.dark-mode .social-media-icons a{
   height: 100vh; /* Full viewport height */
 }
 
+.about-container {
+  background-color: blue; /* Light blue */
+  height: 100vh; /* Full viewport height */
+}
+
 @keyframes animate{
   0%, 100%{
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;

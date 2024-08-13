@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 function App() { 
   return  (
     <div className="App">
+      
       <div className="home-container">
       <Navbar />
   
@@ -38,7 +39,15 @@ function App() {
         </div>
         
       </div>
+
       </div>
+
+
+
+      <div className="about-container">
+
+      </div>
+
     </div>
   );
 }
