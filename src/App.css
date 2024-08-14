@@ -79,6 +79,40 @@ body.dark-mode .social-media-icons a{
   margin: 0 10px;
 }
 
+
+
+
+
+
+.content2 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  height: 150%; /* Take full height of the container */
+  padding: 0; /* Remove padding if any */
+}
+
+.aboutme{
+  font-size: 55px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.learnmore{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.aboutme-content{
+  font-size: 18px;
+  margin-top: 51px;
+  margin-left: 451px;
+  margin-right: 451px;
+  text-align: justify;
+}
+
 .home-container {
   background-color: whitesmoke; /* Light blue */
   height: 100vh; /* Full viewport height */
