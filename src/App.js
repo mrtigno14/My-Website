@@ -67,7 +67,17 @@ function App() {
 
 
       <div id="experience" className="experience-container">
-        ASD
+      <div className="content3"> 
+
+      <div className="experience"> 
+        EXPERIENCE
+        </div>
+
+        <div className="seemyjourney">
+          SEE MY JOURNEY
+          </div>
+
+        </div>
         </div>
 
     </div>
