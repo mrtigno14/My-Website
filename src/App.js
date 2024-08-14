@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faFacebookSquare, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import Navbar from './components/Navbar';
 
@@ -12,7 +12,7 @@ function App() {
   return  (
     <div className="App">
       
-      <div className="home-container">
+      <div id="home" className="home-container">
       <Navbar />
   
       <div className="content">
@@ -44,7 +44,7 @@ function App() {
 
 
 
-      <div className="about-container">
+      <div id="about" className=" about-container">
       <div className="content2">
         <div className="aboutme">
         ABOUT ME
@@ -53,13 +53,22 @@ function App() {
           LEARN MORE ABOUT ME
           </div>
           <div className="aboutme-content">
-          Hey there! My name is Marc Russel Tigno, an aspiring Full-Stack Developer. I'm currently residing in the streets of Taguig City, Philippines. I'm also a Bachelor of Science in Computer Engineering graduate from Adamson University.<br /><br />
-          My journey in web development began when I was introduced to blockchain development by The BLOKC, where they conducted a bootcamp where they taught us how to deploy our own smart contracts in the Arbitrum Network. However, prior to that, I hated web development. My first plan was to get into game and application development. But I never thought that I would be here now, falling in love with web development and web design. <br /><br />
-          The knowledge that I learned during the bootcamp helped me see a new light in web development and I thought to myself that this might be my calling. Now here I am! I am an aspiring Full-Stack Developer, that loves to build things and make ideas turn into the real deal. I learned a new passion and am excited to see where it takes me.
-          So, if you're ready to take your online presence to the next level, I'm here to make it happen. Let's team up and bring your wildest web dreams to life!
+          Hello! I'm Marc Russel Tigno, an aspiring Full-Stack Developer based in Taguig City, Philippines. I'm also a Bachelor of Science in Computer Engineering graduate from Adamson University.<br /><br />
+          My journey in web development began when I was tasked to create an ecommerce website for a client's business by our professor, wherein this is the finals project during the second semester of my third year college which involved designing and developing a website from scratch, complete with database integration. However, prior to that, I had no particular interest in web development, as my initial plan was to pursue game and application development. But, this experience opened my eyes to the world of web development, and I quickly fell in love with it. <br /><br />
+          The skills and knowledge I gained during that finals project, along with the insights from an Arbitrum bootcamp, made me realize that web development might be my true calling. Now, I am fully committed to this path, passionate about building and bringing ideas to life. I learned a new passion and am excited to see where it takes me.<br /><br />
+          If you're looking to elevate your online presence with creativity and precision, I'm here to make it happen. Let's collaborate and turn your concepts into a reality that stands out!
           </div>
+
+
+
+
         </div>
       </div>
+
+
+      <div id="experience" className="experience-container">
+        ASD
+        </div>
 
     </div>
   );

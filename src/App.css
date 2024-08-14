@@ -14,6 +14,11 @@ body.dark-mode .about-container{
   color: #ffffff;
 }
 
+body.dark-mode .experience-container{
+  background-color: #0e1a24;
+  color: #ffffff;
+}
+
 body.dark-mode .social-media-icons a{
   color: white;
 }
@@ -89,7 +94,7 @@ body.dark-mode .social-media-icons a{
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
-  height: 150%; /* Take full height of the container */
+  height: 100%; /* Take full height of the container */
   padding: 0; /* Remove padding if any */
 }
 
@@ -113,6 +118,14 @@ body.dark-mode .social-media-icons a{
   text-align: justify;
 }
 
+
+
+
+
+
+
+
+
 .home-container {
   background-color: whitesmoke; /* Light blue */
   height: 100vh; /* Full viewport height */
@@ -120,7 +133,21 @@ body.dark-mode .social-media-icons a{
 
 .about-container {
   background-color: white; /* Light blue */
-  height: 100vh; /* Full viewport height */
+  height: 150vh; /* Full viewport height */
+}
+
+.experience-container {
+  background-color: whitesmoke; /* Light blue */
+  height: 150vh; /* Full viewport height */
+}
+
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 @keyframes animate{
