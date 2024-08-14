@@ -5,7 +5,12 @@
 /* DARK MODE */
 
 body.dark-mode .home-container{
-  background-color: #121212;
+  background-color: #0e1a24;
+  color: #ffffff;
+}
+
+body.dark-mode .about-container{
+  background-color: #23415a;
   color: #ffffff;
 }
 
@@ -20,13 +25,13 @@ body.dark-mode .social-media-icons a{
   align-items: center; /* Center items vertically */
   justify-content: flex-start; /* Align items to the left */
   padding: 0 50px; /* Add horizontal padding if needed */
-  margin-top: 69px; /* Adjust top margin if needed */
+  
 }
 
 /* Text content styling */
 .text-content {
   margin-left: 50px; /* Space between text and image */
-  margin-top: -220px;
+  margin-top: 0px;
 }
 
 .name-header {
@@ -39,6 +44,7 @@ body.dark-mode .social-media-icons a{
   font-size: 30px;
   font-weight: bold;
   margin-left: -310px;
+  margin-top:
 }
 
 .little-about{
@@ -55,6 +61,7 @@ body.dark-mode .social-media-icons a{
   background-position: center center;
   margin: 20px; /* Existing margin */
   margin-left: 200px; /* Adjust this value as needed to move the blob to the right */
+  margin-top: 150px;
   box-shadow: 0 5px 5px 5px rgba(13,110,253,0.2);
   animation: animate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
@@ -62,8 +69,8 @@ body.dark-mode .social-media-icons a{
 
 .singleCol {
   max-width: 750px;
-  margin-top: 120px;
-  margin-left: -585px;
+  margin-top: 420px;
+  margin-left: -595px;
 }
 
 .social-media-icons a{
@@ -78,7 +85,7 @@ body.dark-mode .social-media-icons a{
 }
 
 .about-container {
-  background-color: blue; /* Light blue */
+  background-color: white; /* Light blue */
   height: 100vh; /* Full viewport height */
 }
 

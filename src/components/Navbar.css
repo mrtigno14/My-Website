@@ -1,11 +1,16 @@
 /* src/Navbar.css */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*background-color: #f7f7f7;*/
     background-color: #161616;
     padding: 25px 20px;
+    position: fixed; /* Make the Navbar fixed */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Make it full width */
+    z-index: 1000; /* Ensure it stays above other content */
+    
   }
   
   .navbar-logo {
@@ -62,10 +67,12 @@
 
   /* Dark mode styles */
   body.dark-mode .navbar {
-    background-color: #222;
+    background-color: white;
+    
   }
 
   body.dark-mode .navbar-logo,
-  body.dark-mode .navbar-links a {
-    color: #fff;
+  body.dark-mode .navbar-links a,
+  body.dark-mode .dark-mode-button  {
+    color: black;
   }
