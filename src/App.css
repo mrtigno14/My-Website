@@ -30,6 +30,7 @@ body.dark-mode .social-media-icons a{
   align-items: center; /* Center items vertically */
   justify-content: flex-start; /* Align items to the left */
   padding: 0 50px; /* Add horizontal padding if needed */
+  margin-top: 25px;
   
 }
 
@@ -49,7 +50,7 @@ body.dark-mode .social-media-icons a{
   font-size: 30px;
   font-weight: bold;
   margin-left: -310px;
-  margin-top:
+  
 }
 
 .little-about{
@@ -126,7 +127,6 @@ body.dark-mode .social-media-icons a{
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
   height: 100%; /* Take full height of the container */
   padding: 0; /* Remove padding if any */
 }
@@ -135,6 +135,7 @@ body.dark-mode .social-media-icons a{
   font-size: 55px;
   font-weight: bold;
   margin: 0;
+  margin-top:150px;
 }
 
 .seemyjourney{
@@ -166,7 +167,7 @@ body.dark-mode .social-media-icons a{
 
 .experience-container {
   background-color: whitesmoke; /* Light blue */
-  height: 150vh; /* Full viewport height */
+  height: 250vh; /* Full viewport height */
 }
 
 
