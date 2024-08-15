@@ -144,7 +144,16 @@ body.dark-mode .social-media-icons a{
   margin: 0;
 }
 
-
+.experience-container2 {
+  background-color: white;
+  height: 80vh; /* Full viewport height */
+  width: 100vh;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Center content vertically */
+  padding: 20px; /* Optional: Add padding for better spacing */
+  margin-top: 100px;
+}
 
 
 

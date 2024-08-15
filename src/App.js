@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
@@ -75,6 +75,11 @@ function App() {
 
         <div className="seemyjourney">
           SEE MY JOURNEY
+          </div>
+
+          <div className="experience-container2">
+          Information Technology Intern (Service Desk / End user Computing Lead)
+
           </div>
 
         </div>
