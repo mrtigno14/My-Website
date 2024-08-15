@@ -9,6 +9,12 @@ import Navbar from './components/Navbar';
 
 
 function App() { 
+  const [activeRole, setActiveRole] = useState('IT Intern');
+
+  const handleRoleChange = (role) => {
+    setActiveRole(role);
+  };
+
   return  (
     <div className="App">
       
@@ -78,9 +84,25 @@ function App() {
           </div>
 
           <div className="experience-container2">
-          Information Technology Intern (Service Desk / End user Computing Lead)
+          {activeRole === 'IT Intern' && (
+          <div className="experience-content">
+            <h2>IT Intern</h2>
+            <p>Details about the IT Intern role.</p>
+          </div>
+        )}
+        {activeRole === 'Freelance Technician' && (
+          <div>
+            <h2>Web Developer</h2>
+            <p>Details about the Web Developer role.</p>
+          </div>
+        )}
 
           </div>
+
+          <div className="experience-button-group">
+        <button onClick={() => handleRoleChange('IT Intern')}>IT Intern</button>
+        <button onClick={() => handleRoleChange('Freelance Technician')}>Freelance Technician</button>
+        </div>
 
         </div>
         </div>

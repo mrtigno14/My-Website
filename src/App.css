@@ -146,15 +146,22 @@ body.dark-mode .social-media-icons a{
 
 .experience-container2 {
   background-color: white;
-  height: 80vh; /* Full viewport height */
+  height: 80vh;
   width: 100vh;
   display: flex;
-  justify-content: flex-start; /* Align content to the left */
-  align-items: center; /* Center content vertically */
-  padding: 20px; /* Optional: Add padding for better spacing */
-  margin-top: 100px;
+  align-items: flex-start; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 0 50px; /* Add horizontal padding if needed */
+  margin-top: 150px;
+  margin-left: -500px;
 }
 
+.experience-content{
+  font-size: px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 50px;
+}
 
 
 
