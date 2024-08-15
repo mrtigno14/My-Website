@@ -86,23 +86,41 @@ function App() {
           <div className="experience-container2">
           {activeRole === 'IT Intern' && (
           <div className="experience-content">
-            <h2>IT Intern</h2>
-            <p>Details about the IT Intern role.</p>
+            <h2>IT Intern (Service Desk / End user Computing Lead)</h2>
+            <b>Phoenix Petroleum Philippines</b>
+            <br></br>
+            <p>July 2024 - September 2024</p>
+            <br></br>
+            <b>Responsibilities and Duties:</b>
+            <br></br>
+            <p>• haha</p>
+            <p>• haha</p>
+            <p>• haha</p>
+            <p>• haha</p>
           </div>
         )}
+        
         {activeRole === 'Freelance Technician' && (
-          <div>
-            <h2>Web Developer</h2>
-            <p>Details about the Web Developer role.</p>
+          <div className="experience-content">
+            <h2>Freelance Technician</h2>
+            <b>Self-Employed</b>
+            <br></br>
+            <p>2020 - Present</p>
+            <br></br>
+            <b>Responsibilities and Duties:</b>
+            <br></br>
+            <p>• haha</p>
+            <p>• haha</p>
+
           </div>
         )}
 
           </div>
 
           <div className="experience-button-group">
-        <button onClick={() => handleRoleChange('IT Intern')}>IT Intern</button>
+        <button onClick={() => handleRoleChange('IT Intern')}>IT Intern</button><br></br>
         <button onClick={() => handleRoleChange('Freelance Technician')}>Freelance Technician</button>
-        </div>
+          </div>
 
         </div>
         </div>
