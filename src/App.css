@@ -260,7 +260,7 @@ body.dark-mode .projects-container4{
   background-color: whitesmoke; /* Example background */
   width: 60vh; /* Adjust width as necessary */
   height: 90vh; /* Match the height of projects-container2 */
-  margin-top: -635px;
+  margin-top: -635.5px;
 }
 
 
@@ -268,7 +268,7 @@ body.dark-mode .projects-container4{
   background-color: whitesmoke;
   height: 90vh;
   width: 60vh; /* Match the width of other containers */
-  margin-top: -635px; /* Aligns it with projects-container3 */
+  margin-top: -635.7px; /* Aligns it with projects-container3 */
   margin-left: 900px; /* Space between projects-container3 and projects-container4 */
 }
 
