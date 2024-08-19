@@ -19,8 +19,23 @@ body.dark-mode .experience-container{
   color: #ffffff;
 }
 
+body.dark-mode .projects-container{
+  background-color: #23415a;
+  color: #ffffff;
+}
+
 body.dark-mode .social-media-icons a{
   color: white;
+}
+
+body.dark-mode .experience-container2{
+  background-color: #23415a;
+  color: #ffffff;
+}
+
+body.dark-mode .projects-container2{
+  background-color:#0e1a24;
+  color: #ffffff;
 }
 
 /* DARK MODE */
@@ -123,6 +138,7 @@ body.dark-mode .social-media-icons a{
 
 
 
+
 .content3{
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -186,6 +202,45 @@ body.dark-mode .social-media-icons a{
 
 
 
+.content4{
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items vertically */
+  height: 100%; /* Take full height of the container */
+  padding: 0; /* Remove padding if any */
+}
+
+.projects-container2 {
+  background-color: whitesmoke;
+  height: 90vh;
+  width: 60vh;
+  display: flex;
+  align-items: flex-start; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 0 50px; /* Add horizontal padding if needed */
+  margin-top: 100px;
+  margin-left: -900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .home-container {
   background-color: whitesmoke; /* Light blue */
   height: 100vh; /* Full viewport height */
@@ -198,7 +253,12 @@ body.dark-mode .social-media-icons a{
 
 .experience-container {
   background-color: whitesmoke; /* Light blue */
-  height: 250vh; /* Full viewport height */
+  height: 150vh; /* Full viewport height */
+}
+
+.projects-container {
+  background-color: white; /* Light blue */
+  height: 150vh; /* Full viewport height */
 }
 
 

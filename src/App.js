@@ -125,6 +125,30 @@ function App() {
         </div>
         </div>
 
+
+        <div id="projects" className="projects-container">
+        <div className="content4">
+        <div className="experience"> 
+        PROJECTS
+        </div>
+        <div className="seemyjourney">
+        HERE ARE SOME OF MY COOL PROJECTS
+        </div>
+        <div className="projects-container2">
+        <div className="experience-content">
+          asd
+        </div>
+        </div>
+
+
+
+
+        </div>
+        </div>
+
+
+
+
     </div>
   );
 }
