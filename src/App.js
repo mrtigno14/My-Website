@@ -144,7 +144,7 @@ function App() {
           <h4><b>Nihahaha Coin Minting Site</b></h4>
         <div className="projects-content2">
         <br></br>
-          The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrm Developer's bootcamp certification. 
+          The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrum Developer's bootcamp certification. 
           It serves as a user-friendly solution for minting and staking an ERC-20 token named Nihahaha-Coin, offering participants an accessible pathway to cryptocurrency creation and staking within the Arbitrum ecosystem.
         </div>
 
@@ -153,6 +153,11 @@ function App() {
         </div>
 
         <div className="projects-container3">
+        
+
+        </div>
+
+        <div className="projects-container4">
 
 
         </div>

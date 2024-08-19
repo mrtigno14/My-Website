@@ -38,6 +38,16 @@ body.dark-mode .projects-container2{
   color: #ffffff;
 }
 
+body.dark-mode .projects-container3{
+  background-color:#0e1a24;
+  color: #ffffff;
+}
+
+body.dark-mode .projects-container4{
+  background-color:#0e1a24;
+  color: #ffffff;
+}
+
 /* DARK MODE */
 
 .content {
@@ -244,9 +254,23 @@ body.dark-mode .projects-container2{
 }
 
 .projects-container3{
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke; /* Example background */
+  width: 60vh; /* Adjust width as necessary */
+  height: 90vh; /* Match the height of projects-container2 */
+  margin-top: -635px;
 }
 
+
+.projects-container4{
+  background-color: whitesmoke;
+  height: 90vh;
+  width: 60vh; /* Match the width of other containers */
+  margin-top: -635px; /* Aligns it with projects-container3 */
+  margin-left: 900px; /* Space between projects-container3 and projects-container4 */
+}
 
 
 
@@ -280,7 +304,7 @@ body.dark-mode .projects-container2{
 
 .projects-container {
   background-color: white; /* Light blue */
-  height: 150vh; /* Full viewport height */
+  height: 250vh; /* Full viewport height */
 }
 
 
