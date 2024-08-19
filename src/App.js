@@ -135,10 +135,28 @@ function App() {
         HERE ARE SOME OF MY COOL PROJECTS
         </div>
         <div className="projects-container2">
-        <div className="experience-content">
-          asd
+        
+        <div className="projects-content">
+        <div className="projects-image">
+          <img src="/KoyukiNft.png" alt="KoyukiNft" />
+        </div>
+          <br></br>
+          <h4><b>Nihahaha Coin Minting Site</b></h4>
+        <div className="projects-content2">
+        <br></br>
+          The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrm Developer's bootcamp certification. 
+          It serves as a user-friendly solution for minting and staking an ERC-20 token named Nihahaha-Coin, offering participants an accessible pathway to cryptocurrency creation and staking within the Arbitrum ecosystem.
+        </div>
+
+
         </div>
         </div>
+
+        <div className="projects-container3">
+
+
+        </div>
+       
 
 
 

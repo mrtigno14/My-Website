@@ -222,8 +222,30 @@ body.dark-mode .projects-container2{
   margin-left: -900px;
 }
 
+.projects-image img{
+  width: 300px; /* Adjusts the image width to fill its container */
+  height: auto ; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: Rounds the corners of the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a better visual */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  margin-top: 50px;
+}
 
+.projects-content{
+  margin: 0;
+  margin-top: 0px;
+  text-align: center;
+}
 
+.projects-content2{
+  font-size: 16px;
+  margin: 0;
+  text-align: justify;
+}
+
+.projects-container3{
+  
+}
 
 
 
