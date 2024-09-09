@@ -4,6 +4,7 @@ import './App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faLaptopCode, faWrench } from '@fortawesome/free-solid-svg-icons';
 
 import Navbar from './components/Navbar';
 
@@ -118,8 +119,10 @@ function App() {
           </div>
 
           <div className="experience-button-group">
-        <button onClick={() => handleRoleChange('IT Intern')}>IT Intern</button><br></br>
-        <button onClick={() => handleRoleChange('Freelance Technician')}>Freelance Technician</button>
+        <button onClick={() => handleRoleChange('IT Intern')}>
+        <FontAwesomeIcon icon={faLaptopCode} />IT Intern</button><br></br>
+        <button onClick={() => handleRoleChange('Freelance Technician')}>
+        <FontAwesomeIcon icon={faWrench} />Freelance Technician</button>
           </div>
 
         </div>
