@@ -28,6 +28,10 @@ body.dark-mode .social-media-icons a{
   color: white;
 }
 
+body.dark-mode .social-media-icons a:hover{
+  color: darkseagreen;
+}
+
 body.dark-mode .experience-container2{
   background-color: #23415a;
   color: #ffffff;
@@ -63,6 +67,27 @@ body.dark-mode .experience-button-group button{
   margin-top: 25px;
   
 }
+
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* This class will be added when the element is in view */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
 
 /* Text content styling */
 .text-content {
@@ -113,7 +138,13 @@ body.dark-mode .experience-button-group button{
   color: black;
   font-size: 2rem;
   margin: 0 10px;
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
 }
+
+.social-media-icons a:hover {
+  color:darkseagreen; /* Green color on hover */
+}
+
 
 
 
@@ -219,7 +250,7 @@ body.dark-mode .experience-button-group button{
 }
 
 .experience-button-group button:hover {
-  border: 4px solid green; /* Blue border on hover */
+  border: 4px solid darkseagreen; /* Blue border on hover */
   transform: translateY(-5px);
 }
 

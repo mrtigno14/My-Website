@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
@@ -11,16 +11,36 @@ import Navbar from './components/Navbar';
 
 function App() { 
   const [activeRole, setActiveRole] = useState('IT Intern');
+  const [visibleSections, setVisibleSections] = useState([]);
 
   const handleRoleChange = (role) => {
     setActiveRole(role);
   };
 
+  // Detects if sections are visible
+  const handleScroll = () => {
+    const sections = document.querySelectorAll('.fade-in');
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        setVisibleSections((prev) => [...new Set([...prev, section.id])]);
+      }
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check if elements are already in view
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  
+
   return  (
     <div className="App">
-      
-      <div id="home" className="home-container">
       <Navbar />
+      <div id="home" className={`home-container fade-in ${visibleSections.includes('home') ? 'visible' : ''}`}>
+      
   
       <div className="content">
 
@@ -51,7 +71,7 @@ function App() {
 
 
 
-      <div id="about" className=" about-container">
+      <div id="about" className={`about-container fade-in ${visibleSections.includes('about') ? 'visible' : ''}`}>
       <div className="content2">
         <div className="aboutme">
         ABOUT ME
@@ -73,7 +93,7 @@ function App() {
       </div>
 
 
-      <div id="experience" className="experience-container">
+      <div id="experience" className={`experience-container fade-in ${visibleSections.includes('experience') ? 'visible' : ''}`}>
       <div className="content3"> 
 
       <div className="experience"> 
@@ -129,7 +149,7 @@ function App() {
         </div>
 
 
-        <div id="projects" className="projects-container">
+        <div id="projects" className={`projects-container fade-in ${visibleSections.includes('projects') ? 'visible' : ''}`}>
         <div className="content4">
         <div className="experience"> 
         PROJECTS
