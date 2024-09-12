@@ -120,9 +120,9 @@ function App() {
 
           <div className="experience-button-group">
         <button onClick={() => handleRoleChange('IT Intern')}>
-        <FontAwesomeIcon icon={faLaptopCode} />IT Intern</button><br></br>
+        <FontAwesomeIcon icon={faLaptopCode} />&nbsp;IT Intern</button><br></br>
         <button onClick={() => handleRoleChange('Freelance Technician')}>
-        <FontAwesomeIcon icon={faWrench} />Freelance Technician</button>
+        <FontAwesomeIcon icon={faWrench} />&nbsp;Freelance Technician</button>
           </div>
 
         </div>

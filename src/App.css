@@ -48,6 +48,11 @@ body.dark-mode .projects-container4{
   color: #ffffff;
 }
 
+body.dark-mode .experience-button-group button{
+  background-color:#23415a;
+  color: #ffffff;
+}
+
 /* DARK MODE */
 
 .content {
@@ -197,27 +202,26 @@ body.dark-mode .projects-container4{
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
-  margin-left: 750px; /* Adjust margin as needed */
-  margin-top: -300px;
+  margin-left: 1000px; /* Adjust margin as needed */
+  margin-top: -475px;
 }
 
 .experience-button-group button {
-  background: linear-gradient(45deg, #ff6b6b, #f06595);
+  background: white;
   border: none;
   border-radius: 8px;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
+  color: black;
+  padding: 16px 32px;
+  font-size: 32px;
   margin: 10px;
   cursor: pointer;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .experience-button-group button:hover {
-  background: linear-gradient(45deg, #f06595, #ff6b6b);
+  border: 4px solid green; /* Blue border on hover */
   transform: translateY(-5px);
 }
-
 
 
 
@@ -241,7 +245,7 @@ body.dark-mode .projects-container4{
   justify-content: flex-start; /* Align items to the left */
   padding: 0 50px; /* Add horizontal padding if needed */
   margin-top: 100px;
-  margin-left: -900px;
+  margin-left: -1275px;
 }
 
 .projects-image img{
@@ -272,7 +276,7 @@ body.dark-mode .projects-container4{
   background-color: whitesmoke; /* Example background */
   width: 60vh; /* Adjust width as necessary */
   height: 90vh; /* Match the height of projects-container2 */
-  margin-top: -635.5px;
+  margin-top: -829px;
 }
 
 
@@ -280,8 +284,8 @@ body.dark-mode .projects-container4{
   background-color: whitesmoke;
   height: 90vh;
   width: 60vh; /* Match the width of other containers */
-  margin-top: -635.7px; /* Aligns it with projects-container3 */
-  margin-left: 900px; /* Space between projects-container3 and projects-container4 */
+  margin-top: -830px; /* Aligns it with projects-container3 */
+  margin-left: 1275px; /* Space between projects-container3 and projects-container4 */
 }
 
 
