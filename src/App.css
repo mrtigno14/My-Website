@@ -213,6 +213,22 @@ body.dark-mode .experience-button-group button{
   padding: 0 50px; /* Add horizontal padding if needed */
   margin-top: 100px;
   margin-left: -500px;
+  position: relative;
+}
+
+.experience-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px; /* Add some padding if needed */
+  margin-top: 50px;
+  margin-left: 750px;
+}
+
+.experience-image img {
+  width: 100px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  
 }
 
 .experience-content{

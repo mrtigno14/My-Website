@@ -12,9 +12,16 @@ import Navbar from './components/Navbar';
 function App() { 
   const [activeRole, setActiveRole] = useState('IT Intern');
   const [visibleSections, setVisibleSections] = useState([]);
+  const [showImage, setShowImage] = useState('/pnxlogo.png');
 
   const handleRoleChange = (role) => {
     setActiveRole(role);
+    if (role === 'IT Intern') {
+      setShowImage('/pnxlogo.png');
+    } else if (role === 'Freelance Technician') {
+      setShowImage('/freelancetech.png'); // Replace with the path to your second image
+    }
+
   };
 
   // Detects if sections are visible
@@ -94,6 +101,7 @@ function App() {
 
 
       <div id="experience" className={`experience-container fade-in ${visibleSections.includes('experience') ? 'visible' : ''}`}>
+      
       <div className="content3"> 
 
       <div className="experience"> 
@@ -105,6 +113,9 @@ function App() {
           </div>
 
           <div className="experience-container2">
+          <div className="experience-image" style={{ display: showImage ? 'block' : 'none' }}>
+            <img src={showImage} alt="Experience Image" />
+          </div>
           {activeRole === 'IT Intern' && (
           <div className="experience-content">
             <h2>IT Intern (Service Desk / End user Computing Lead)</h2>
@@ -119,6 +130,8 @@ function App() {
             <p>• haha</p>
             <p>• haha</p>
           </div>
+
+          
         )}
         
         {activeRole === 'Freelance Technician' && (
