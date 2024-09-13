@@ -123,12 +123,11 @@ function App() {
             <br></br>
             <p>July 2024 - September 2024</p>
             <br></br>
-            <b>Responsibilities and Duties:</b>
-            <br></br>
-            <p>• haha</p>
-            <p>• haha</p>
-            <p>• haha</p>
-            <p>• haha</p>
+            <p><b>Responsibilities and Duties:</b></p>
+            <p>• Respond to user requests for service, troubleshoot problems, and help develop solutions.</p>
+            <p>• Support PC/Laptop/Printer hardware components, desktop operating system software, and application software.</p>
+            <p>• Perform minor repairs to equipment and arrange for other servicing needs.</p>
+            <p>• Provide backup technical support for network issues, including router, firewall, and wireless access points.</p>
           </div>
 
           
@@ -143,8 +142,8 @@ function App() {
             <br></br>
             <b>Responsibilities and Duties:</b>
             <br></br>
-            <p>• haha</p>
-            <p>• haha</p>
+            <p>• Experienced in assembling custom computers and configuring hardware components.</p>
+            <p>• Proficient in diagnosing and troubleshooting a wide range of hardware issues and system failures.</p>
 
           </div>
         )}
