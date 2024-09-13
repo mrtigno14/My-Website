@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
 .App {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* DARK MODE */
@@ -301,12 +300,33 @@ body.dark-mode .experience-button-group button{
 }
 
 .projects-image img{
-  width: 300px; /* Adjusts the image width to fill its container */
+  width: 500px; /* Adjusts the image width to fill its container */
   height: auto ; /* Maintains aspect ratio */
   border-radius: 8px; /* Optional: Rounds the corners of the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a better visual */
   object-fit: cover; /* Ensures the image covers the container without distortion */
-  margin-top: 50px;
+  margin-top: 50px; 
+  margin-left: -25px;
+}
+
+.projects-image2 img{
+  width: 500px; /* Adjusts the image width to fill its container */
+  height: auto ; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: Rounds the corners of the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a better visual */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  margin-top: -325px; 
+  
+}
+
+.projects-image3 img{
+  width: 500px; /* Adjusts the image width to fill its container */
+  height: auto ; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: Rounds the corners of the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a better visual */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  margin-top: 50px; 
+  
 }
 
 .projects-content{
@@ -317,7 +337,25 @@ body.dark-mode .experience-button-group button{
 
 .projects-content2{
   font-size: 16px;
-  margin: 0;
+  margin-left: -5px;
+  margin-right: 25px;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.projects-content3{
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: -25px;
+  text-align: justify;
+}
+
+.projects-content4{
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 35px;
   text-align: justify;
 }
 

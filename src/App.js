@@ -114,7 +114,7 @@ function App() {
 
           <div className="experience-container2">
           <div className="experience-image" style={{ display: showImage ? 'block' : 'none' }}>
-            <img src={showImage} alt="Experience Image" />
+            <img src={showImage} alt={activeRole === 'IT Intern' ? 'Phoenix Petroleum logo' : 'Freelance Technician related image'} />
           </div>
           {activeRole === 'IT Intern' && (
           <div className="experience-content">
@@ -169,15 +169,20 @@ function App() {
         <div className="seemyjourney">
         HERE ARE SOME OF MY COOL PROJECTS
         </div>
+
+
         <div className="projects-container2">
         
         <div className="projects-content">
+
         <div className="projects-image">
           <img src="/KoyukiNft.png" alt="KoyukiNft" />
         </div>
+
           <br></br>
-          <h4><b>Nihahaha Coin Minting Site</b></h4>
+          
         <div className="projects-content2">
+        <center><h4><b>Nihahaha Coin Minting Site</b></h4></center>
         <br></br>
           The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrum Developer's bootcamp certification. 
           It serves as a user-friendly solution for minting and staking an ERC-20 token named Nihahaha-Coin, offering participants an accessible pathway to cryptocurrency creation and staking within the Arbitrum ecosystem.
@@ -188,12 +193,41 @@ function App() {
         </div>
 
         <div className="projects-container3">
+        <div className="projects-content">
+        <div className="projects-image2">
+          <img src="/LoginPage.png" alt="LoginPage" />
+        </div>
         
+        <div className="projects-content3">
+        <center><h4><b>Nihahaha Coin Minting Site</b></h4></center>
+        <br></br>
+        
+          The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrum Developer's bootcamp certification. 
+          It serves as a user-friendly solution for minting and staking an ERC-20 token named Nihahaha-Coin, offering participants an accessible pathway to cryptocurrency creation and staking within the Arbitrum ecosystem.
+        </div>
+
+
+        </div>
+          
 
         </div>
 
         <div className="projects-container4">
+        <div className="projects-content">
+        <div className="projects-image3">
+          <img src="/LoginPage.png" alt="LoginPage" />
+        </div>
+        
+        <div className="projects-content4">
+        <center><h4><b>Nihahaha Coin Minting Site</b></h4></center>
+        <br></br>
+        
+          The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrum Developer's bootcamp certification. 
+          It serves as a user-friendly solution for minting and staking an ERC-20 token named Nihahaha-Coin, offering participants an accessible pathway to cryptocurrency creation and staking within the Arbitrum ecosystem.
+        </div>
 
+
+        </div>
 
         </div>
        
