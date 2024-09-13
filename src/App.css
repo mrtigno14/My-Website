@@ -28,6 +28,11 @@ body.dark-mode .projects-container{
   color: #ffffff;
 }
 
+body.dark-mode .contact-container{
+  background-color: #0e1a24;
+  color: #ffffff;
+}
+
 body.dark-mode .social-media-icons a{
   color: white;
 }
@@ -378,6 +383,12 @@ body.dark-mode .experience-button-group button{
   margin-left: 1275px; /* Space between projects-container3 and projects-container4 */
 }
 
+.moreprojectstocome{
+  font-size: 69px;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
 
 
 
@@ -410,7 +421,12 @@ body.dark-mode .experience-button-group button{
 
 .projects-container {
   background-color: white; /* Light blue */
-  height: 250vh; /* Full viewport height */
+  height: 175vh; /* Full viewport height */
+}
+
+.contact-container {
+  background-color: whitesmoke; /* Light blue */
+  height: 100vh; /* Full viewport height */
 }
 
 

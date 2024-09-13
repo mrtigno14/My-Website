@@ -4,7 +4,7 @@ import './App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faLaptopCode, faWrench } from '@fortawesome/free-solid-svg-icons';
+import { faLaptop, faScrewdriver } from '@fortawesome/free-solid-svg-icons';
 
 import Navbar from './components/Navbar';
 
@@ -152,13 +152,20 @@ function App() {
 
           <div className="experience-button-group">
         <button onClick={() => handleRoleChange('IT Intern')}>
-        <FontAwesomeIcon icon={faLaptopCode} />&nbsp;IT Intern</button><br></br>
+        <FontAwesomeIcon icon={faLaptop} />&nbsp;IT Intern</button><br></br>
         <button onClick={() => handleRoleChange('Freelance Technician')}>
-        <FontAwesomeIcon icon={faWrench} />&nbsp;Freelance Technician</button>
+        <FontAwesomeIcon icon={faScrewdriver} />&nbsp;Freelance Technician</button>
           </div>
 
         </div>
         </div>
+
+
+
+
+
+
+
 
 
         <div id="projects" className={`projects-container fade-in ${visibleSections.includes('projects') ? 'visible' : ''}`}>
@@ -231,11 +238,24 @@ function App() {
 
         </div>
        
-
+       <div className="moreprojectstocome">
+        MORE PROJECTS TO COME!!!
+      </div>
 
 
 
         </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div id="contact" className={`contact-container fade-in ${visibleSections.includes('contact') ? 'visible' : ''}`}>
+        
         </div>
 
 
