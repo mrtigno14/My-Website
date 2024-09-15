@@ -5,6 +5,7 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faLaptop, faScrewdriver } from '@fortawesome/free-solid-svg-icons';
+import { faCss3Alt, faPhp } from '@fortawesome/free-brands-svg-icons';
 
 import Navbar from './components/Navbar';
 
@@ -315,10 +316,33 @@ function App() {
         <center><h4><b>eCommerce Website</b></h4></center>
         <br></br>
         
-          My finals project during the second semester of my third year college.
+          My finals project during the second semester of my third year college. My finals project during the second semester of my third year college.
+          My finals project during the second semester of my third year college. My finals project during the second semester of my third year college.
           
         </div>
 
+        {/* Tech Stack Section */}
+        <div className="tech-stack">
+              <center><h5><b>Tech Stack</b></h5></center>
+              <div className="tech-icons">
+                <div className="tech-icon">
+                  <FontAwesomeIcon icon={faCss3Alt} />&nbsp;CSS
+                </div>
+                <div className="tech-icon">
+                  <FontAwesomeIcon icon={faPhp} />&nbsp;PHP
+                </div>
+              </div>
+        </div>
+
+        {/* Demo and Source Buttons */}
+        <div className="button-group">
+          <a href="https://your-demo-link.com" target="_blank" rel="noopener noreferrer">
+            <button className="demo-button">Demo</button>
+          </a>
+          <a href="https://github.com/mrtigno14/E-commerce-Website" target="_blank" rel="noopener noreferrer">
+            <button className="source-button">Source</button>
+          </a>
+        </div>
 
         </div>
 

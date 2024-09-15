@@ -38,7 +38,7 @@ body.dark-mode .social-media-icons a{
 }
 
 body.dark-mode .social-media-icons a:hover{
-  color: darkseagreen;
+  color: #007bff;
 }
 
 body.dark-mode .experience-container2{
@@ -151,7 +151,7 @@ body.dark-mode .experience-button-group button{
 }
 
 .social-media-icons a:hover {
-  color:darkseagreen; /* Green color on hover */
+  color:#007bff; /* Green color on hover */
 }
 
 
@@ -275,7 +275,7 @@ body.dark-mode .experience-button-group button{
 }
 
 .experience-button-group button:hover {
-  border: 4px solid darkseagreen; /* Blue border on hover */
+  border: 4px solid #007bff; /* Blue border on hover */
   transform: translateY(-5px);
 }
 
@@ -365,7 +365,13 @@ body.dark-mode .experience-button-group button{
 
 
 
-
+.projects-container4{
+  background-color: whitesmoke;
+  height: 90vh;
+  width: 60vh; /* Match the width of other containers */
+  margin-top: -830px; /* Aligns it with projects-container3 */
+  margin-left: 1275px; /* Space between projects-container3 and projects-container4 */
+}
 
 .projects-image3 img{
   width: 500px; /* Adjusts the image width to fill its container */
@@ -428,7 +434,62 @@ body.dark-mode .experience-button-group button{
   background-color: rgba(0, 0, 0, 0.5); /* Slight hover effect */
 }
 
+.projects-content4{
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 35px;
+  text-align: justify;
+}
 
+.tech-stack {
+  margin-top: 20px;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust spacing between icons */
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  font-size: 24px; /* Size of the icons */
+}
+
+.tech-icon svg {
+  margin-right: 8px; /* Space between icon and label */
+}
+
+.tech-icon:hover {
+  color: #007bff; /* Add hover effect if needed */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+.demo-button,
+.source-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff; /* Default button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.demo-button:hover,
+.source-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
 
 
 
@@ -457,13 +518,14 @@ body.dark-mode .experience-button-group button{
   text-align: justify;
 }
 
-.projects-content4{
-  font-size: 16px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 35px;
-  text-align: justify;
-}
+
+
+
+
+
+
+
+
 
 .projects-container3{
 
@@ -474,13 +536,7 @@ body.dark-mode .experience-button-group button{
 }
 
 
-.projects-container4{
-  background-color: whitesmoke;
-  height: 90vh;
-  width: 60vh; /* Match the width of other containers */
-  margin-top: -830px; /* Aligns it with projects-container3 */
-  margin-left: 1275px; /* Space between projects-container3 and projects-container4 */
-}
+
 
 .moreprojectstocome{
   font-size: 69px;
