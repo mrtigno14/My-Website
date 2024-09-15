@@ -14,6 +14,7 @@ function App() {
   const [visibleSections, setVisibleSections] = useState([]);
   const [showImage, setShowImage] = useState('/pnxlogo.png');
   const [currentEcommerceImageIndex, setCurrentEcommerceImageIndex] = useState(0);
+  const [currentDatabaseImageIndex, setCurrentDatabaseImageIndex] = useState(0);
 
 
   const handleRoleChange = (role) => {
@@ -27,15 +28,15 @@ function App() {
   };
 
   const ecommerceImages = [
-    '/LoginPage.png',
-    '/AgeVerification.png',
-    '/RegistrationForm.png',
-    '/HomePage.png',
-    '/ProductsPage.png',
-    '/CheckoutPage.png',
-    '/ShoppingCartPage.png',
-    '/Admin.png',
-    '/Admin-viewproducts.png',
+    '/eCommerce-LoginPage.png',
+    '/eCommerce-AgeVerification.png',
+    '/eCommerce-RegistrationForm.png',
+    '/eCommerce-HomePage.png',
+    '/eCommerce-ProductsPage.png',
+    '/eCommerce-CheckoutPage.png',
+    '/eCommerce-ShoppingCartPage.png',
+    '/eCommerce-Admin.png',
+    '/eCommerce-Admin-viewproducts.png',
 
 
   ];
@@ -51,6 +52,33 @@ function App() {
       prevIndex === 0 ? ecommerceImages.length - 1 : prevIndex - 1
     );
   };
+
+
+  const databaseImages = [
+    '/DatabaseAdmin-LoginForm.png',
+    '/DatabaseAdmin-SelectionForm.png',
+    '/DatabaseAdmin-MedicinesForm.png',
+    '/DatabaseAdmin-SuggestionForm.png',
+    '/DatabaseAdmin-ImageForm.png',
+    '/DatabaseAdmin-SalesForm.png',
+    '/DatabaseAdmin-CoinForm.png',
+
+  ];
+
+  const handleNextDatabaseImage = () => {
+    setCurrentDatabaseImageIndex((prevIndex) =>
+      prevIndex === databaseImages.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+  
+  const handlePrevDatabaseImage = () => {
+    setCurrentDatabaseImageIndex((prevIndex) =>
+      prevIndex === 0 ? databaseImages.length - 1 : prevIndex - 1
+    );
+  };
+
+
+
 
   // Detects if sections are visible
   const handleScroll = () => {
@@ -94,12 +122,12 @@ function App() {
           </div>
         </div>
         <div className="singleCol social-media-icons">
-        <a href="https://github.com/mrtigno14">
-        <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a href="https://www.linkedin.com/in/marc-russel-tigno-a7b34423a">
-        <FontAwesomeIcon icon={faLinkedin} />
-        </a>
+          <a href="https://github.com/mrtigno14">
+          <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="https://www.linkedin.com/in/marc-russel-tigno-a7b34423a">
+          <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </div>
         
       </div>
@@ -232,7 +260,19 @@ function App() {
         <div className="projects-container3">
         <div className="projects-content">
         <div className="projects-image2">
-          <img src="/LoginPage.png" alt="LoginPage" />
+        <button onClick={handlePrevDatabaseImage} className="prev-button2">◀</button>
+          <img src={databaseImages[currentDatabaseImageIndex]} alt={`Database ${currentDatabaseImageIndex + 1}`} />
+        <button onClick={handleNextDatabaseImage} className="next-button2">▶</button>
+
+      <div className="image-indicators">
+        {databaseImages.map((_, index) => (
+          <span
+            key={index}
+            className={`indicator-dot ${index === currentDatabaseImageIndex ? 'active' : ''}`}
+            onClick={() => setCurrentDatabaseImageIndex(index)}
+          ></span>
+        ))}
+      </div>
         </div>
         
         <div className="projects-content3">
@@ -253,7 +293,7 @@ function App() {
         <div className="projects-content">
         <div className="projects-image3">
                 <button onClick={handlePrevEcommerceImage} className="prev-button">◀</button>
-                  <img src={ecommerceImages[currentEcommerceImageIndex]} alt={`eCommerce Image ${currentEcommerceImageIndex + 1}`} />
+                  <img src={ecommerceImages[currentEcommerceImageIndex]} alt={`eCommerce ${currentEcommerceImageIndex + 1}`} />
                 <button onClick={handleNextEcommerceImage} className="next-button">▶</button>
 
                 <div className="image-indicators">

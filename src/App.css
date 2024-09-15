@@ -314,24 +314,66 @@ body.dark-mode .experience-button-group button{
   margin-left: -25px;
 }
 
+
+
+
+
 .projects-image2 img{
   width: 500px; /* Adjusts the image width to fill its container */
-  height: auto ; /* Maintains aspect ratio */
+  height: 225px ; /* Maintains aspect ratio */
   border-radius: 8px; /* Optional: Rounds the corners of the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a better visual */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
-  margin-top: -325px; 
+  object-fit:fill; /* Ensures the image covers the container without distortion */
+  margin-top: 50px; 
   
 }
 
+.prev-button2, .next-button2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White arrow for better contrast */
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1; /* Ensures the arrows appear above the image */
+}
+
+.prev-button2 {
+  top: 520px;
+  left: 715px;
+}
+
+.next-button2 {
+  top: 520px;
+  right: 715px;
+}
+
+.prev-button2:hover, .next-button2:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .projects-image3 img{
   width: 500px; /* Adjusts the image width to fill its container */
-  height: auto ; /* Maintains aspect ratio */
+  height: 225px ; /* Maintains aspect ratio */
   border-radius: 8px; /* Optional: Rounds the corners of the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a better visual */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
-  margin-top: 50px; 
-
+  object-fit:fill; /* Ensures the image covers the container without distortion */
+  margin-top: 50px;
   
 }
 
@@ -411,7 +453,7 @@ body.dark-mode .experience-button-group button{
   font-size: 16px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: -25px;
+  margin-top: 35px;
   text-align: justify;
 }
 
@@ -424,9 +466,7 @@ body.dark-mode .experience-button-group button{
 }
 
 .projects-container3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   background-color: whitesmoke; /* Example background */
   width: 60vh; /* Adjust width as necessary */
   height: 90vh; /* Match the height of projects-container2 */
