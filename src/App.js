@@ -13,6 +13,8 @@ function App() {
   const [activeRole, setActiveRole] = useState('IT Intern');
   const [visibleSections, setVisibleSections] = useState([]);
   const [showImage, setShowImage] = useState('/pnxlogo.png');
+  const [currentEcommerceImageIndex, setCurrentEcommerceImageIndex] = useState(0);
+
 
   const handleRoleChange = (role) => {
     setActiveRole(role);
@@ -22,6 +24,32 @@ function App() {
       setShowImage('/freelancetech.png'); // Replace with the path to your second image
     }
 
+  };
+
+  const ecommerceImages = [
+    '/LoginPage.png',
+    '/AgeVerification.png',
+    '/RegistrationForm.png',
+    '/HomePage.png',
+    '/ProductsPage.png',
+    '/CheckoutPage.png',
+    '/ShoppingCartPage.png',
+    '/Admin.png',
+    '/Admin-viewproducts.png',
+
+
+  ];
+
+  const handleNextEcommerceImage = () => {
+    setCurrentEcommerceImageIndex((prevIndex) => 
+      prevIndex === ecommerceImages.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrevEcommerceImage = () => {
+    setCurrentEcommerceImageIndex((prevIndex) => 
+      prevIndex === 0 ? ecommerceImages.length - 1 : prevIndex - 1
+    );
   };
 
   // Detects if sections are visible
@@ -34,6 +62,8 @@ function App() {
       }
     });
   };
+
+  
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -206,7 +236,7 @@ function App() {
         </div>
         
         <div className="projects-content3">
-        <center><h4><b>Nihahaha Coin Minting Site</b></h4></center>
+        <center><h4><b>Database Admin</b></h4></center>
         <br></br>
         
           The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrum Developer's bootcamp certification. 
@@ -222,15 +252,31 @@ function App() {
         <div className="projects-container4">
         <div className="projects-content">
         <div className="projects-image3">
-          <img src="/LoginPage.png" alt="LoginPage" />
+                <button onClick={handlePrevEcommerceImage} className="prev-button">◀</button>
+                  <img src={ecommerceImages[currentEcommerceImageIndex]} alt={`eCommerce Image ${currentEcommerceImageIndex + 1}`} />
+                <button onClick={handleNextEcommerceImage} className="next-button">▶</button>
+
+                <div className="image-indicators">
+                  {ecommerceImages.map((_, index) => (
+                    <span
+                      key={index}
+                      className={`indicator-dot ${index === currentEcommerceImageIndex ? 'active' : ''}`}
+                      onClick={() => setCurrentEcommerceImageIndex(index)} // This makes the dots clickable
+                    ></span>
+                  ))}
+                </div>
+
+
         </div>
         
+        
+
         <div className="projects-content4">
-        <center><h4><b>Nihahaha Coin Minting Site</b></h4></center>
+        <center><h4><b>eCommerce Website</b></h4></center>
         <br></br>
         
-          The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrum Developer's bootcamp certification. 
-          It serves as a user-friendly solution for minting and staking an ERC-20 token named Nihahaha-Coin, offering participants an accessible pathway to cryptocurrency creation and staking within the Arbitrum ecosystem.
+          My finals project during the second semester of my third year college.
+          
         </div>
 
 

@@ -331,8 +331,67 @@ body.dark-mode .experience-button-group button{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a better visual */
   object-fit: cover; /* Ensures the image covers the container without distortion */
   margin-top: 50px; 
+
   
 }
+
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White arrow for better contrast */
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1; /* Ensures the arrows appear above the image */
+}
+
+.prev-button {
+  top: 525px;
+  left: 1350px;
+}
+
+.next-button {
+  top: 530px;
+  right: 75px;
+}
+
+.prev-button:hover, .next-button:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+.image-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.indicator-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.3); /* Inactive dots */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator-dot.active {
+  background-color: rgba(0, 0, 0, 0.7); /* Active dot */
+}
+
+.indicator-dot:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Slight hover effect */
+}
+
+
+
+
+
+
+
 
 .projects-content{
   margin: 0;
