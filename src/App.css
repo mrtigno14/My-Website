@@ -306,10 +306,10 @@ body.dark-mode .experience-button-group button{
 
 .projects-image img{
   width: 500px; /* Adjusts the image width to fill its container */
-  height: auto ; /* Maintains aspect ratio */
+  height: 225px; /* Maintains aspect ratio */
   border-radius: 8px; /* Optional: Rounds the corners of the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a better visual */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  object-fit: fillr; /* Ensures the image covers the container without distortion */
   margin-top: 50px; 
   margin-left: -25px;
 }
@@ -412,7 +412,7 @@ body.dark-mode .experience-button-group button{
 
 .image-indicators {
   text-align: center;
-  margin-top: 10px;
+  margin-top: -25px;
 }
 
 .indicator-dot {

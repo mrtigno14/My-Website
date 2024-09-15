@@ -5,7 +5,7 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faLaptop, faScrewdriver } from '@fortawesome/free-solid-svg-icons';
-import { faCss3Alt, faPhp } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt, faPhp, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 
 import Navbar from './components/Navbar';
 
@@ -254,6 +254,38 @@ function App() {
           It serves as a user-friendly solution for minting and staking an ERC-20 token named Nihahaha-Coin, offering participants an accessible pathway to cryptocurrency creation and staking within the Arbitrum ecosystem.
         </div>
 
+        {/* Tech Stack Section */}
+        <div className="tech-stack">
+              <center><h5><b>Tech Stack</b></h5></center>
+              <div className="tech-icons">
+                <div className="tech-icon">
+                  <img src="/typescript.svg" alt="Solidity" style={{ width: '30px', height: '30px' }} />&nbsp;TypeScript
+                </div>
+                <div className="tech-icon">
+                  <img src="/solidity.svg" alt="Solidity" style={{ width: '30px', height: '30px' }} />&nbsp;Solidity
+                </div>
+                
+              </div><div className="tech-icons">             
+                <div className="tech-icon">
+                  <FontAwesomeIcon icon={faCss3Alt} />&nbsp;CSS
+                </div>
+                <div className="tech-icon">
+                  <FontAwesomeIcon icon={faJsSquare} />&nbsp;JavaScript
+                </div>
+              </div>
+              
+        </div>
+
+        {/* Demo and Source Buttons */}
+        <div className="button-group">
+          <a href="https://arbitrum-certificate.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <button className="demo-button">Demo</button>
+          </a>
+          <a href="https://github.com/mrtigno14/Nihahaha-Coin" target="_blank" rel="noopener noreferrer">
+            <button className="source-button">Source</button>
+          </a>
+        </div>
+
 
         </div>
         </div>
@@ -280,8 +312,8 @@ function App() {
         <center><h4><b>Database Admin</b></h4></center>
         <br></br>
         
-          The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrum Developer's bootcamp certification. 
-          It serves as a user-friendly solution for minting and staking an ERC-20 token named Nihahaha-Coin, offering participants an accessible pathway to cryptocurrency creation and staking within the Arbitrum ecosystem.
+          asd
+          
         </div>
 
 
@@ -336,9 +368,9 @@ function App() {
 
         {/* Demo and Source Buttons */}
         <div className="button-group">
-          <a href="https://your-demo-link.com" target="_blank" rel="noopener noreferrer">
+          
             <button className="demo-button">Demo</button>
-          </a>
+          
           <a href="https://github.com/mrtigno14/E-commerce-Website" target="_blank" rel="noopener noreferrer">
             <button className="source-button">Source</button>
           </a>
