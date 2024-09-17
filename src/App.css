@@ -494,6 +494,18 @@ body.dark-mode .experience-button-group button{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .content5{
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -502,17 +514,81 @@ body.dark-mode .experience-button-group button{
   padding: 0; /* Remove padding if any */
 }
 
-.contact-container2{
-  background-color: white;
-  height: 75vh;
-  width: 100vh;
-  display: flex;
-  align-items: flex-start; /* Center items vertically */
-  justify-content: flex-start; /* Align items to the left */
-  padding: 0 50px; /* Add horizontal padding if needed */
-  margin-top: 100px;
- 
+.contact-content{
+  margin: 0;
+  margin-top: 350px;
+  position: absolute;
+
 }
+
+.form-row {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 300px;
+  
+}
+
+.form-group {
+  flex: 1; /* Allow input fields to grow and take up space equally */
+  
+  margin-bottom: 1.5rem;
+}
+
+
+
+.form-control::placeholder {
+  color: #888; /* Placeholder text color */
+  font-size: 0.875rem; /* Adjust font size for placeholder text */
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical; /* Allows vertical resizing of the textarea */
+  min-height: 150px; /* Minimum height for the textarea */
+  max-height: 500px; /* Maximum height for the textarea */
+  overflow: auto; /* Adds scrollbars if the content exceeds the max-height */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 25px;
+  
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
 
 
 
@@ -610,7 +686,7 @@ body.dark-mode .experience-button-group button{
 
 .contact-container {
   background-color: whitesmoke; /* Light blue */
-  height: 125vh; /* Full viewport height */
+  height: 100vh; /* Full viewport height */
 }
 
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
+import emailjs from 'emailjs-com';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -16,6 +17,7 @@ function App() {
   const [showImage, setShowImage] = useState('/pnxlogo.png');
   const [currentEcommerceImageIndex, setCurrentEcommerceImageIndex] = useState(0);
   const [currentDatabaseImageIndex, setCurrentDatabaseImageIndex] = useState(0);
+  const [formSubmitted, setFormSubmitted] = useState(false); // State for form submission
 
 
   const handleRoleChange = (role) => {
@@ -100,6 +102,18 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // EmailJS email sending function
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_jz2jora', 'template_dsci81f', e.target, 'Rxwl5I6wVQW3Gvqy6')
+      .then((result) => {
+        console.log(result.text);
+        setFormSubmitted(true); // Show form success message
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
   
 
   return  (
@@ -428,14 +442,35 @@ function App() {
         <div className="seemyjourney">
          AND LET'S GET TO WORK
         </div>
-        <div className="contact-container2">
-
-        </div>
+          <div className="contact-content">
+        {formSubmitted ? (
+          <div>Thank you for your message! I'll get back to you soon.</div>
+        ) : (
+          <form onSubmit={sendEmail}>
+            <div className="form-row">
+            <div className="form-group">
+              
+              <input type="text" name="from_name" className="form-control" placeholder="Enter your name" required />
+            </div>
+            <div className="form-group">
+              
+              <input type="email" name="from_email" className="form-control" placeholder="Enter your email" required />
+            </div>
+            </div>
+            <div className="form-group">
+              
+              <textarea name="message" className="form-control" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <input type="hidden" name="to_name" value="Marc Russel Tigno" />
+            <button type="submit" className="btn btn-primary">Send Message</button>
+          </form>
+        )}
+      </div>
           
 
 
 
-
+      
         </div>
 
 
