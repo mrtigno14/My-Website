@@ -518,19 +518,22 @@ body.dark-mode .experience-button-group button{
   margin: 0;
   margin-top: 350px;
   position: absolute;
+  margin-left: -10rem;
 
 }
 
 .form-row {
   display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: center; /* Center items horizontally */
+  gap: 11rem; /* Adjust gap as needed for spacing between fields */
   margin-bottom: 1rem;
-  gap: 300px;
   
 }
 
 .form-group {
-  flex: 1; /* Allow input fields to grow and take up space equally */
-  
+  flex: 1; /* Allow the input fields to grow and take up space */ 
+  max-width: 450px; /* Set a maximum width for the fields */ 
   margin-bottom: 1.5rem;
 }
 
@@ -545,21 +548,22 @@ body.dark-mode .experience-button-group button{
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-  width: 100%;
+  width: 175%;
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
+  box-sizing: border-box
 
 }
 
 .form-group textarea {
-  width: 100%;
+  width: 167%;
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
-  resize: vertical; /* Allows vertical resizing of the textarea */
+  resize: none; /* Allows vertical resizing of the textarea */
   min-height: 150px; /* Minimum height for the textarea */
   max-height: 500px; /* Maximum height for the textarea */
   overflow: auto; /* Adds scrollbars if the content exceeds the max-height */
@@ -581,7 +585,7 @@ body.dark-mode .experience-button-group button{
   border-radius: 4px;
   cursor: pointer;
   margin-top: 25px;
-  
+  margin-left: 10rem;
 }
 
 .btn-primary:hover {

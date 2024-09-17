@@ -457,6 +457,9 @@ function App() {
               <input type="email" name="from_email" className="form-control" placeholder="Enter your email" required />
             </div>
             </div>
+
+
+            
             <div className="form-group">
               
               <textarea name="message" className="form-control" rows="5" placeholder="Enter your message" required></textarea>
