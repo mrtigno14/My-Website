@@ -164,7 +164,7 @@ body.dark-mode .experience-button-group button{
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
+  
   height: 65%; /* Take full height of the container */
   padding: 0; /* Remove padding if any */
 }
@@ -173,6 +173,7 @@ body.dark-mode .experience-button-group button{
   font-size: 55px;
   font-weight: bold;
   margin: 0;
+  margin-top: 150px;
 }
 
 .learnmore{
@@ -493,6 +494,34 @@ body.dark-mode .experience-button-group button{
 
 
 
+.content5{
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items vertically */
+  height: 100%; /* Take full height of the container */
+  padding: 0; /* Remove padding if any */
+}
+
+.contact-container2{
+  background-color: white;
+  height: 75vh;
+  width: 100vh;
+  display: flex;
+  align-items: flex-start; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 0 50px; /* Add horizontal padding if needed */
+  margin-top: 100px;
+ 
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -581,7 +610,7 @@ body.dark-mode .experience-button-group button{
 
 .contact-container {
   background-color: whitesmoke; /* Light blue */
-  height: 100vh; /* Full viewport height */
+  height: 125vh; /* Full viewport height */
 }
 
 

@@ -316,6 +316,30 @@ function App() {
           
         </div>
 
+        {/* Tech Stack Section */}
+        <div className="tech-stack">
+              <center><h5><b>Tech Stack</b></h5></center>
+              <div className="tech-icons">
+                <div className="tech-icon">
+                <img src="/csharp.svg" alt="C#" style={{ width: '30px', height: '30px' }} />&nbsp;C Sharp
+                </div>
+                
+                </div>
+                
+              
+              
+        </div>
+
+        {/* Demo and Source Buttons */}
+        <div className="button-group">
+          <a href="https://github.com/mrtigno14/Database-Admin/releases" target="_blank" rel="noopener noreferrer">
+            <button className="demo-button">Demo</button>
+          </a>
+          <a href="https://github.com/mrtigno14/Database-Admin" target="_blank" rel="noopener noreferrer">
+            <button className="source-button">Source</button>
+          </a>
+        </div>
+
 
         </div>
           
@@ -397,7 +421,30 @@ function App() {
 
 
         <div id="contact" className={`contact-container fade-in ${visibleSections.includes('contact') ? 'visible' : ''}`}>
-        
+        <div className="content5">
+        <div className="experience">
+        CONTACT ME
+        </div>
+        <div className="seemyjourney">
+         AND LET'S GET TO WORK
+        </div>
+        <div className="contact-container2">
+
+        </div>
+          
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
         </div>
 
 
