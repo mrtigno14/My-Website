@@ -38,7 +38,7 @@ body.dark-mode .social-media-icons a{
 }
 
 body.dark-mode .social-media-icons a:hover{
-  color: #007bff;
+  color: #088F8F;
 }
 
 body.dark-mode .experience-container2{
@@ -151,7 +151,7 @@ body.dark-mode .experience-button-group button{
 }
 
 .social-media-icons a:hover {
-  color:#007bff; /* Green color on hover */
+  color:#088F8F; /* Green color on hover */
 }
 
 
@@ -224,6 +224,8 @@ body.dark-mode .experience-button-group button{
   margin-top: 100px;
   margin-left: -500px;
   position: relative;
+  border: none;
+  border-radius: 25px;
 }
 
 .experience-image {
@@ -266,7 +268,7 @@ body.dark-mode .experience-button-group button{
 .experience-button-group button {
   background: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
   color: black;
   padding: 16px 32px;
   font-size: 32px;
@@ -276,7 +278,7 @@ body.dark-mode .experience-button-group button{
 }
 
 .experience-button-group button:hover {
-  border: 4px solid #007bff; /* Blue border on hover */
+  border: 4px solid #088F8F; /* Blue border on hover */
   transform: translateY(-5px);
 }
 
@@ -303,6 +305,8 @@ body.dark-mode .experience-button-group button{
   padding: 0 50px; /* Add horizontal padding if needed */
   margin-top: 100px;
   margin-left: -1275px;
+  border: none;
+  border-radius: 25px;
 }
 
 .projects-image img{
@@ -372,6 +376,8 @@ body.dark-mode .experience-button-group button{
   width: 60vh; /* Match the width of other containers */
   margin-top: -830px; /* Aligns it with projects-container3 */
   margin-left: 1275px; /* Space between projects-container3 and projects-container4 */
+  border: none;
+  border-radius: 25px;
 }
 
 .projects-image3 img{
@@ -464,7 +470,7 @@ body.dark-mode .experience-button-group button{
 }
 
 .tech-icon:hover {
-  color: #007bff; /* Add hover effect if needed */
+  color: #088F8F; /* Add hover effect if needed */
 }
 
 .button-group {
@@ -472,6 +478,7 @@ body.dark-mode .experience-button-group button{
   justify-content: center;
   gap: 15px; /* Space between buttons */
   margin-top: 20px;
+  
 }
 
 .demo-button,
@@ -479,17 +486,19 @@ body.dark-mode .experience-button-group button{
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: #007bff; /* Default button color */
+  background-color: #088F8F; /* Default button color */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 25px;
 }
 
 .demo-button:hover,
 .source-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #066B6B; /* Darker shade on hover */
 }
 
 
@@ -572,25 +581,27 @@ body.dark-mode .experience-button-group button{
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
 .form-group textarea:focus {
-  border-color: #007bff;
+  border-color: #088F8F;
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #088F8F;
+  border-color: #088F8F;
   color: white;
   padding: 0.75rem 1.25rem;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 25px;
   margin-left: 10rem;
+  border: none;
+  border-radius: 25px;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #004085;
+  background-color: #066B6B;
+  border-color: #B2E0E0;
 }
 
 
@@ -637,11 +648,12 @@ body.dark-mode .experience-button-group button{
 
 
 .projects-container3{
-
   background-color: whitesmoke; /* Example background */
   width: 60vh; /* Adjust width as necessary */
   height: 90vh; /* Match the height of projects-container2 */
   margin-top: -829px;
+  border: none;
+  border-radius: 25px;
 }
 
 

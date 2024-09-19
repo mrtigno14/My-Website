@@ -12,6 +12,8 @@
     z-index: 1000; /* Ensure it stays above other content */
     
   }
+
+  
   
   .navbar-logo {
     color: white;
@@ -42,15 +44,12 @@
     color: white;
     text-decoration: none;
     font-size: 1em;
+    transition: color 0.3s ease; /* Smooth color transition */
   }
   
   .navbar-links a:hover {
-    text-decoration: underline;
+    color: #44BFBF;
   }
-
-  /* .navbar-toggle {
-    margin-left: auto;
-  } */
 
   .dark-mode-button {
     background: none;
@@ -63,6 +62,17 @@
     justify-content: center;
     width: 40px;
     height: 40px;
+    
+  }
+
+  .dark-mode-button :hover {
+    color: #44BFBF;
+    transition: color 0.3s ease;
+  }
+
+  body.dark-mode .dark-mode-button :hover {
+    color: #44BFBF;
+    transition: color 0.3s ease;
   }
 
   /* Dark mode styles */
@@ -71,8 +81,14 @@
     
   }
 
+  body.dark-mode .navbar-links a:hover{
+    color: #44BFBF;
+
+  }
+
   body.dark-mode .navbar-logo,
   body.dark-mode .navbar-links a,
-  body.dark-mode .dark-mode-button  {
+  body.dark-mode .dark-mode-button{
     color: black;
+    
   }
