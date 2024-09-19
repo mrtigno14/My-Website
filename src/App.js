@@ -133,7 +133,8 @@ function App() {
             Computer Engineer
           </div>
           <div className="little-about">
-            Hello World
+            My name is Marc Russel Tigno and I am a Graduate in Computer Engineering from Adamson University. 
+            I do and make .I constantly try to improve on. i prioritize building experiences
           </div>
         </div>
         <div className="singleCol social-media-icons">
@@ -144,6 +145,7 @@ function App() {
           <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
+        Message/Call: +63 995 558 7475
         
       </div>
 
