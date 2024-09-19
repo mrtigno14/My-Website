@@ -33,6 +33,11 @@ body.dark-mode .contact-container{
   color: #ffffff;
 }
 
+body.dark-mode .bot-navbar-container{
+  background-color: #23415a;
+  color: #ffffff;
+}
+
 body.dark-mode .social-media-icons a{
   color: white;
 }
@@ -268,7 +273,7 @@ body.dark-mode .experience-button-group button{
 .experience-button-group button {
   background: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 35px;
   color: black;
   padding: 16px 32px;
   font-size: 32px;
@@ -657,13 +662,15 @@ body.dark-mode .experience-button-group button{
 }
 
 
-
-
 .moreprojectstocome{
   font-size: 69px;
   font-weight: bold;
   margin-top: 150px;
 }
+
+
+
+
 
 
 
@@ -704,6 +711,18 @@ body.dark-mode .experience-button-group button{
   background-color: whitesmoke; /* Light blue */
   height: 100vh; /* Full viewport height */
 }
+
+.bot-navbar-container {
+  background-color: white; /* Light blue */
+  height: 10vh; /* Full viewport height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+
 
 
 

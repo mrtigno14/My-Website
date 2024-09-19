@@ -475,14 +475,24 @@ function App() {
 
       
         </div>
+        </div>
 
 
 
 
+        <div className="bot-navbar-container">
+          <div className="nav-left">
+          Copyright © 2024. All rights are reserved
+          </div>
 
-
-
-
+          <div className="social-media-icons">
+            <a href="https://github.com/mrtigno14">
+            <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href="https://www.linkedin.com/in/marc-russel-tigno-a7b34423a">
+            <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </div>
         </div>
 
 
