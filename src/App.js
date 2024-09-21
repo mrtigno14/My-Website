@@ -119,12 +119,15 @@ function App() {
   return  (
     <div className="App">
       <Navbar />
+
+      
       <div id="home" className={`home-container fade-in ${visibleSections.includes('home') ? 'visible' : ''}`}>
       
   
       <div className="content">
 
           <div className="blob"></div>
+          
         <div className="text-content">
           <div className="name-header">
             Marc Russel Tigno
@@ -133,10 +136,16 @@ function App() {
             Computer Engineer
           </div>
           <div className="little-about">
-            My name is Marc Russel Tigno and I am a Graduate in Computer Engineering from Adamson University. 
-            I do and make .I constantly try to improve on. i prioritize building experiences
+            My name is Marc Russel Tigno, a Computer Engineering graduate from Adamson University. <br></br>
+            I specialize in PC assembly and troubleshooting, alongside creating innovative software and websites.<br></br>
+            I am constantly improving my skills in JavaScript, C#, and Python to stay with the latest trends in technology.<br></br>
+            Additionally, I focus on building experiences with every project I undertake.
           </div>
         </div>
+
+
+
+        
         <div className="singleCol social-media-icons">
           <a href="https://github.com/mrtigno14">
           <FontAwesomeIcon icon={faGithub} />
@@ -145,9 +154,15 @@ function App() {
           <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
+        <div className="mynumber">
         Message/Call: +63 995 558 7475
-        
+        </div>
+
+
       </div>
+
+
+
 
       </div>
 

@@ -4,6 +4,7 @@
 .App {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* DARK MODE */
@@ -73,14 +74,7 @@ body.dark-mode .experience-button-group button{
 
 /* DARK MODE */
 
-.content {
-  display: flex;
-  align-items: center; /* Center items vertically */
-  justify-content: flex-start; /* Align items to the left */
-  padding: 0 50px; /* Add horizontal padding if needed */
-  margin-top: 25px;
-  
-}
+
 
 
 
@@ -102,30 +96,45 @@ body.dark-mode .experience-button-group button{
 
 
 
+.content {
+  display: flex;
+  align-items: ; 
+  margin-top: 250px;
+  
+}
 
 /* Text content styling */
 .text-content {
-  margin-left: 50px; /* Space between text and image */
-  margin-top: 0px;
+  margin-left: 25px; 
+  margin-top: 50px;
 }
 
 .name-header {
   font-size: 69px;
   font-weight: bold;
-  margin: 0;
+  text-align: left;
+  margin-left: -5px;
 }
 
 .title{
   font-size: 30px;
   font-weight: bold;
-  margin-left: -310px;
-  
+  margin-left: -3px;
+  text-align: left;
 }
 
 .little-about{
-  font-size: 19px;
-  margin-top: 5px;
-  margin-left: -475px;
+  font-size: 16px;
+  margin-top: px;
+  margin-left: px;
+  text-align: left;
+}
+
+.mynumber{
+  margin-top: 400px;
+  margin-left: -88px;
+  text-align: left;
+  font-weight: bold;
 }
 
 .blob {
@@ -135,17 +144,17 @@ body.dark-mode .experience-button-group button{
   background-size: cover;
   background-position: center center;
   margin: 20px; /* Existing margin */
-  margin-left: 200px; /* Adjust this value as needed to move the blob to the right */
-  margin-top: 150px;
+  margin-left: 475px; /* Adjust this value as needed to move the blob to the right */
   box-shadow: 0 5px 5px 5px rgba(13,110,253,0.2);
   animation: animate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
+  
 }
 
 .singleCol {
   max-width: 750px;
-  margin-top: 420px;
-  margin-left: -595px;
+  margin-top: 325px;
+  margin-left: -813px;
 }
 
 .social-media-icons a{
@@ -690,6 +699,7 @@ body.dark-mode .experience-button-group button{
 .home-container {
   background-color: whitesmoke; /* Light blue */
   height: 100vh; /* Full viewport height */
+  display: flex;
 }
 
 .about-container {
