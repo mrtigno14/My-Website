@@ -127,7 +127,7 @@ function App() {
       <div className="content">
 
           <div className="blob"></div>
-          
+
         <div className="text-content">
           <div className="name-header">
             Marc Russel Tigno
@@ -284,7 +284,7 @@ function App() {
           The Nihahaha-Coin Minting Platform was developed as a project requirement for the Arbitrum Developer's bootcamp certification. 
           It serves as a user-friendly solution for minting and staking an ERC-20 token named Nihahaha-Coin, offering participants an accessible pathway to cryptocurrency creation and staking within the Arbitrum ecosystem.
         </div>
-        <br></br><br></br><br></br>
+        
         {/* Tech Stack Section */}
         <div className="tech-stack">
               <center><h5><b>Tech Stack</b></h5></center>
@@ -343,10 +343,13 @@ function App() {
         <center><h4><b>Database Admin</b></h4></center>
         <br></br>
         
-          asd
+          The Database Admin application is a windows executable platform for desktop only.
+          It allows administrators of the vending machine (thesis prototype) to modify medicine details, manage suggestion data, adjust coin change amounts, monitor sales, and receive notifications about medicine stock and coin change status, indicating if they are empty or low.
+          
           
         </div>
 
+        
         {/* Tech Stack Section */}
         <div className="tech-stack">
               <center><h5><b>Tech Stack</b></h5></center>
@@ -360,7 +363,7 @@ function App() {
               
               
         </div>
-
+        
         {/* Demo and Source Buttons */}
         <div className="button-group">
           <a href="https://github.com/mrtigno14/Database-Admin/releases" target="_blank" rel="noopener noreferrer">
@@ -403,8 +406,11 @@ function App() {
         <center><h4><b>eCommerce Website</b></h4></center>
         <br></br>
         
-          My finals project during the second semester of my third year college. My finals project during the second semester of my third year college.
-          My finals project during the second semester of my third year college. My finals project during the second semester of my third year college.
+        This eCommerce website is designed for a client's vape products business, featuring a product display and an integrated inventory management system. 
+        Users can easily browse products, utilize an add-to-cart function, and proceed through a checkout process, with orders securely stored in a MySQL database. 
+        Currently, the website operates within a XAMPP environment and requires the local host address for access. 
+        Future plans include online deployment for improved accessibility and functionality.
+          
           
         </div>
 
