@@ -408,8 +408,7 @@ function App() {
         
         This eCommerce website is designed for a client's vape products business, featuring a product display and an integrated inventory management system. 
         Users can easily browse products, utilize an add-to-cart function, and proceed through a checkout process, with orders securely stored in a MySQL database. 
-        Currently, the website operates within a XAMPP environment and requires the local host address for access. 
-        Future plans include online deployment for improved accessibility and functionality.
+        
           
           
         </div>
@@ -429,14 +428,14 @@ function App() {
 
         {/* Demo and Source Buttons */}
         <div className="button-group">
-          
+          <a href="http://relxnovelty-sdl.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer">
             <button className="demo-button">Demo</button>
-          
+          </a>
           <a href="https://github.com/mrtigno14/E-commerce-Website" target="_blank" rel="noopener noreferrer">
             <button className="source-button">Source</button>
           </a>
         </div>
-
+        
         </div>
 
         </div>
