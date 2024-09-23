@@ -102,9 +102,16 @@ body.dark-mode .experience-button-group button{
 
 .content {
   display: flex;
-  align-items: ; 
+  flex-direction: row;
   margin-top: 250px;
   
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack elements on smaller screens */
+    margin-top: 100px;
+  }
 }
 
 /* Text content styling */
@@ -114,14 +121,14 @@ body.dark-mode .experience-button-group button{
 }
 
 .name-header {
-  font-size: 69px;
+  font-size: 3vw;
   font-weight: bold;
   text-align: left;
   margin-left: -5px;
 }
 
 .title{
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: bold;
   margin-left: -3px;
   text-align: left;
@@ -129,37 +136,102 @@ body.dark-mode .experience-button-group button{
 
 .little-about{
   font-size: 16px;
-  margin-top: px;
-  margin-left: px;
   text-align: left;
 }
 
-.mynumber{
-  margin-top: 400px;
-  margin-left: -88px;
-  text-align: left;
-  font-weight: bold;
+@media (max-width: 768px) {
+  .text-content {
+    text-align: center; /* Center on smaller screens */
+    margin-left: 0; /* Reset margin */
+    margin-top: 0;
+  }
+
+  .name-header {
+    font-size: 8vw; /* Larger font for small screens */
+    text-align: center; 
+  }
+
+  .title {
+    font-size: 5vw; /* Larger font for small screens */
+    text-align: center; 
+  }
+
+  .little-about {
+    font-size: 15x; /* Adjust for smaller screens */
+    margin-top: 15px;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center; /* Center text */
+  }
 }
+
+
+
 
 .blob {
   background-image: url(https://i.imgur.com/IQuCr5D.jpeg);
-  width: 400px;
-  height: 400px;
+  width: 400px; /* Default width */
+  height: 400px; /* Default height */
   background-size: cover;
   background-position: center center;
-  margin: 20px; /* Existing margin */
-  margin-left: 475px; /* Adjust this value as needed to move the blob to the right */
+  margin: 20px;
+  margin-left: 475px; /* Only apply this on larger screens */
   box-shadow: 0 5px 5px 5px rgba(13,110,253,0.2);
   animation: animate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
-  
 }
+
+@media (max-width: 768px) {
+  .blob {
+    width: 70%; /* Scale down image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: auto; /* Remove the fixed left margin */
+    margin-right: auto; /* Center the image horizontally */
+    padding-top: 300px;
+    padding-left: 300px;
+    margin-top: 50px; /* Add a bit of top margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .blob {
+    width: 100%; /* Full width for very small screens */
+    height: auto;
+    margin: 0 auto; /* Center on small screens */
+  }
+}
+
 
 .singleCol {
   max-width: 750px;
   margin-top: 325px;
   margin-left: -813px;
 }
+
+@media (max-width: 768px) {
+  .singleCol {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.mynumber{
+  margin-top: 400px;
+  font-weight: bold;
+  margin-left: -88px;
+}
+
+
+
+@media (max-width: 768px) {
+  .mynumber {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0; /* Remove the negative margin to allow proper centering */
+  }
+}
+
+
 
 .social-media-icons a{
   color: black;
@@ -707,6 +779,13 @@ body.dark-mode .experience-button-group button{
   display: flex;
 }
 
+@media (max-width: 768px) {
+  
+.home-container {
+  height: 130vh;
+  }
+}
+
 .about-container {
   background-color: white; /* Light blue */
   height: 150vh; /* Full viewport height */
@@ -756,3 +835,5 @@ html {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
 }
+
+
