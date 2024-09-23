@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import DarkModeToggle from './DarkModeToggle';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Import the icons
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +15,10 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-logo">Mtigno14</div>
-        <button className="toggle-button" onClick={toggleMenu}>
-          {isOpen ? 'Close' : 'Menu'}
-        </button>
-        <div className={`navbar-right ${isOpen ? 'active' : ''}`}>
+        <div className="navbar-right">
+          <button className="toggle-button" onClick={toggleMenu}>
+            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+          </button>
           <ul className={`navbar-links ${isOpen ? 'show' : ''}`}>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>

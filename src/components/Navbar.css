@@ -57,6 +57,11 @@
   font-size: 1.5em;
   cursor: pointer;
   display: none; /* Hide toggle button by default */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.toggle-button:hover {
+  color: #44BFBF;
 }
 
 /* Media Queries for Responsive Design */
