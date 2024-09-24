@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Ensure all elements fit within the viewport */
+* {
+  box-sizing: border-box; /* Include padding and borders in the element's width/height */
+  margin: 0;
+  padding: 0;
+}
 
 .App {
   text-align: center;
