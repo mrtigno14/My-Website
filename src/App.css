@@ -107,10 +107,18 @@ body.dark-mode .experience-button-group button{
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .content {
     flex-direction: column; /* Stack elements on smaller screens */
     margin-top: 100px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px)  {
+  .content {
+    flex-direction: column; /* Stack elements on smaller screens */
+    margin-top: 100px;
+    
   }
 }
 
@@ -139,7 +147,7 @@ body.dark-mode .experience-button-group button{
   text-align: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .text-content {
     text-align: center; /* Center on smaller screens */
     margin-left: 0; /* Reset margin */
@@ -165,6 +173,33 @@ body.dark-mode .experience-button-group button{
   }
 }
 
+/* Tablet screens (between 768px and 1025px wide) */
+@media (min-width: 771px) and (max-width: 1025px) {
+  .text-content {
+    text-align: center; /* Center content */
+    margin-left: 0; /* Reset margin */
+    margin-top: 0;
+  }
+
+  .name-header {
+    font-size: 6cqh; /* Slightly smaller font for larger screens */
+    text-align: center; 
+  }
+
+  .title {
+    font-size: 3vw; /* Adjusted for larger screens */
+    text-align: center; 
+  }
+
+  .little-about {
+    font-size: 20px; /* Fixed typo, now 15px */
+    margin-top: 15px;
+    padding-left: 7%; /* Left and right padding */
+    padding-right: 7%;
+    text-align: center; /* Center text */
+  }
+}
+
 
 
 
@@ -181,7 +216,7 @@ body.dark-mode .experience-button-group button{
   transition: all 1s ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .blob {
     width: 70%; /* Scale down image width */
     height: auto; /* Maintain aspect ratio */
@@ -193,13 +228,19 @@ body.dark-mode .experience-button-group button{
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 771px) and (max-width: 1025px) {
   .blob {
-    width: 100%; /* Full width for very small screens */
-    height: auto;
-    margin: 0 auto; /* Center on small screens */
+    width: 45%; /* Scale down image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: auto; /* Remove the fixed left margin */
+    margin-right: auto; /* Center the image horizontally */
+    padding-top: 300px;
+    padding-left: 300px;
+    margin-top: 50px; /* Add a bit of top margin */
   }
 }
+
+
 
 
 .singleCol {
@@ -208,7 +249,14 @@ body.dark-mode .experience-button-group button{
   margin-left: -813px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
+  .singleCol {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
   .singleCol {
     margin-left: 0;
     margin-top: 30px;
@@ -223,9 +271,18 @@ body.dark-mode .experience-button-group button{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .mynumber {
     text-align: center;
+    margin-top: 30px;
+    margin-left: 0; /* Remove the negative margin to allow proper centering */
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .mynumber {
+    text-align: center;
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 0; /* Remove the negative margin to allow proper centering */
   }
@@ -779,12 +836,21 @@ body.dark-mode .experience-button-group button{
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   
 .home-container {
-  height: 130vh;
+  height: 110vh;
   }
 }
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .home-container {
+    height: 115vh;
+    }
+}
+
+
+
 
 .about-container {
   background-color: white; /* Light blue */

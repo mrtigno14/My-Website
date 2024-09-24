@@ -65,7 +65,7 @@
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
   .navbar-links {
       display: none; /* Hide links by default on small screens */
       flex-direction: column; /* Stack links vertically */
@@ -104,6 +104,8 @@
     background-color: rgba(255, 255, 255, 0.95); /* White background for dark mode */
 }
 }
+
+
 
 /* Dark Mode styles */
 .dark-mode-button {
