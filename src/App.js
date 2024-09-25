@@ -126,7 +126,7 @@ function App() {
   
       <div className="content">
 
-          <div className="blob"></div>
+        <div className="blob"></div>
 
         <div className="text-content">
           <div className="name-header">
@@ -141,12 +141,7 @@ function App() {
             I am constantly improving my skills in JavaScript, C#, and Python to stay with the latest trends in technology.<br></br>
             Additionally, I focus on building experiences with every project I undertake.
           </div>
-        </div>
-
-
-
-        
-        <div className="singleCol social-media-icons">
+          <div className="singleCol social-media-icons">
           <a href="https://github.com/mrtigno14">
           <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -157,6 +152,13 @@ function App() {
         <div className="mynumber">
         Message/Call: +63 995 558 7475
         </div>
+        </div>
+        
+
+
+
+        
+        
 
 
       </div>

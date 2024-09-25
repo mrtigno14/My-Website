@@ -113,7 +113,7 @@ body.dark-mode .experience-button-group button{
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: w;
   margin-top: 25px;
   align-items: center;
   
@@ -134,10 +134,17 @@ body.dark-mode .experience-button-group button{
   }
 }
 
+@media (min-width: 1026px) and (max-width: 1911px)  {
+  .content {
+    flex-direction: row; /* Stack elements on smaller screens */
+    margin-top: -200px;
+  }
+}
+
 /* Text content styling */
 .text-content {
   margin-left: 25px; 
-  margin-top: -100px;
+  margin-top: 25px;
 }
 
 .name-header {
@@ -212,6 +219,30 @@ body.dark-mode .experience-button-group button{
   }
 }
 
+/* Tablet screens (between 768px and 1025px wide) */
+@media (min-width: 1026px) and (max-width: 1911px) {
+  .text-content {
+    text-align: left; /* Center content */
+    margin-left: 0; /* Reset margin */
+    margin-top: -25px;
+  }
+
+  .name-header {
+    font-size: 2.5vw; /* Slightly smaller font for larger screens */
+    text-align: left; 
+  }
+
+  .title {
+    font-size: 1.5vw; /* Adjusted for larger screens */
+    text-align: left; 
+  }
+
+  .little-about {
+    font-size: 1.2vw; /* Fixed typo, now 15px */
+    margin-top: 15px;
+    text-align: left; /* Center text */
+  }
+}
 
 
 
@@ -252,13 +283,25 @@ body.dark-mode .experience-button-group button{
   }
 }
 
+@media (min-width: 1026px) and (max-width: 1911px){
+  .blob {
+    width: 50%; /* Scale down image width */
+    height: 40%;
+    margin-left: auto; /* Remove the fixed left margin */
+    margin-right: auto; /* Center the image horizontally */
+    margin-top: 50px; /* Add a bit of top margin */
+    margin: 125px;
+  }
+}
+
 
 
 
 .singleCol {
   max-width: 750px;
-  margin-top: 225px;
-  margin-left: -813px;
+  margin-top: 25px;
+  margin-left: -335px;
+  
 }
 
 @media (max-width: 770px) {
@@ -276,10 +319,20 @@ body.dark-mode .experience-button-group button{
   }
 }
 
+@media (min-width: 1026px) and (max-width: 1911px) {
+  .singleCol {
+    
+    margin-left: 0;
+    margin-top: 25px;
+    text-align: left; /* Ensure contents are centered */
+
+  }
+}
+
 .mynumber{
-  margin-top: 325px;
+  margin-top: 25px;
   font-weight: bold;
-  margin-left: -88px;
+  margin-left:-560px;
 }
 
 
@@ -301,9 +354,20 @@ body.dark-mode .experience-button-group button{
   }
 }
 
+@media (min-width: 1026px) and (max-width: 1911px) {
+  .mynumber {
+    text-align: left;
+    font-size: 1.2vw;
+    margin-top: 25px;
+    margin-left: 0;
+    align-items: flex-start; /* Align to left */
+  }
+}
+
 
 
 .social-media-icons a{
+  
   color: black;
   font-size: 2rem;
   margin: 0 10px;
@@ -852,11 +916,17 @@ body.dark-mode .experience-button-group button{
 @media (max-width: 770px) {
   
 .home-container {
-  height: 130vh;
+  height: 120vh;
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
+  .home-container {
+    height: 130vh;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px) {
   .home-container {
     height: 140vh;
     }
