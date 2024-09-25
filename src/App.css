@@ -113,7 +113,6 @@ body.dark-mode .experience-button-group button{
 
 .content {
   display: flex;
-  flex-direction: w;
   margin-top: 25px;
   align-items: center;
   
@@ -290,7 +289,7 @@ body.dark-mode .experience-button-group button{
     margin-left: auto; /* Remove the fixed left margin */
     margin-right: auto; /* Center the image horizontally */
     margin-top: 50px; /* Add a bit of top margin */
-    margin: 125px;
+    margin: 175px;
   }
 }
 
