@@ -129,29 +129,35 @@ function App() {
         <div className="blob"></div>
 
         <div className="text-content">
+          
           <div className="name-header">
             Marc Russel Tigno
           </div>
+
           <div className="title">
             Computer Engineer
           </div>
+
           <div className="little-about">
             My name is Marc Russel Tigno, a Computer Engineering graduate from Adamson University. <br></br>
             I specialize in PC assembly and troubleshooting, alongside creating innovative software and websites.<br></br>
             I am constantly improving my skills in JavaScript, C#, and Python to stay with the latest trends in technology.<br></br>
             Additionally, I focus on building experiences with every project I undertake.
           </div>
+
           <div className="singleCol social-media-icons">
-          <a href="https://github.com/mrtigno14">
-          <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a href="https://www.linkedin.com/in/marc-russel-tigno-a7b34423a">
-          <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </div>
-        <div className="mynumber">
-        Message/Call: +63 995 558 7475
-        </div>
+            <a href="https://github.com/mrtigno14">
+            <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href="https://www.linkedin.com/in/marc-russel-tigno-a7b34423a">
+            <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </div>
+
+          <div className="mynumber">
+          Message/Call: +63 995 558 7475
+          </div>
+
         </div>
         
 
