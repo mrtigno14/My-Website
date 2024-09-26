@@ -181,63 +181,69 @@ function App() {
         <div className="aboutme">
         ABOUT ME
         </div>
+
         <div className="learnmore">
           LEARN MORE ABOUT ME
-          </div>
-          <div className="aboutme-content">
+        </div>
+          
+        <div className="aboutme-content">
           Hello! I'm Marc Russel Tigno, an aspiring Full-Stack Developer based in Taguig City, Philippines. I'm also a Bachelor of Science in Computer Engineering graduate from Adamson University.<br /><br />
           My journey in web development began during the second semester of my third year in college, when our professor tasked us with creating an eCommerce website as our final project. This experience taught me how to design and develop a website from scratch, including database integration. However, prior to that, I had no particular interest in web development, as my initial plan was to pursue game and application development. But, this experience introduced me to web development, and I realized it was a field I wanted to pursue further. <br /><br />
           The skills and knowledge I gained during that finals project, along with the insights from an Arbitrum bootcamp, made me realize that web development might be my true calling. Now, I am fully committed to this path, passionate about building and bringing ideas to life. I learned a new passion and am excited to see where it takes me.<br /><br />
           If you're looking to elevate your online presence with creativity and precision, I'm here to make it happen. Let's collaborate and turn your concepts into a reality that stands out!
-          </div>
-
-
-
-
         </div>
+
+      </div>
+
       </div>
 
 
       <div id="experience" className={`experience-container fade-in ${visibleSections.includes('experience') ? 'visible' : ''}`}>
-      
       <div className="content3"> 
 
       <div className="experience"> 
         EXPERIENCE
-        </div>
+      </div>
 
         <div className="seemyjourney">
           SEE MY JOURNEY
-          </div>
+        </div>
 
           <div className="experience-container2">
           <div className="experience-image" style={{ display: showImage ? 'block' : 'none' }}>
             <img src={showImage} alt={activeRole === 'IT Intern' ? 'Phoenix Petroleum logo' : 'Freelance Technician related image'} />
           </div>
           {activeRole === 'IT Intern' && (
+            
           <div className="experience-content">
-            <h2>IT Intern (Service Desk / End user Computing Lead)</h2>
+            <div className="experience-content2">
+            <h1><b>IT Intern (Service Desk/End user Computing Lead)</b></h1>
             <b>Phoenix Petroleum Philippines</b>
             <br></br>
             <p>July 2024 - September 2024</p>
             <br></br>
+            </div>
             <p><b>Responsibilities and Duties:</b></p>
             <p>• Respond to user requests for service, troubleshoot problems, and help develop solutions.</p>
             <p>• Support PC/Laptop/Printer hardware components, desktop operating system software, and application software.</p>
             <p>• Perform minor repairs to equipment and arrange for other servicing needs.</p>
             <p>• Provide backup technical support for network issues, including router, firewall, and wireless access points.</p>
           </div>
+          
 
           
         )}
         
         {activeRole === 'Freelance Technician' && (
           <div className="experience-content">
-            <h2>Freelance Technician</h2>
+            <div className="experience-content2">
+            <h1><b>Freelance Technician</b></h1>
             <b>Self-Employed</b>
             <br></br>
             <p>2020 - Present</p>
             <br></br>
+            </div>
+
             <b>Responsibilities and Duties:</b>
             <br></br>
             <p>• Experienced in assembling custom computers and configuring hardware components.</p>
