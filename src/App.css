@@ -128,7 +128,7 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 771px) and (max-width: 1025px)  {
   .content {
     flex-direction: column; /* Stack elements on smaller screens */
-    margin-top: 100px;
+    margin-top: 125px;
     
   }
 }
@@ -136,7 +136,7 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 1026px) and (max-width: 1911px)  {
   .content {
     flex-direction: row; /* Stack elements on smaller screens */
-    margin-top: -200px;
+    margin-top: -175px;
   }
 }
 
@@ -183,7 +183,7 @@ body.dark-mode .experience-button-group button{
   }
 
   .little-about {
-    font-size: 15x; /* Adjust for smaller screens */
+    font-size: 3.1vw;; /* Adjust for smaller screens */
     margin-top: 15px;
     padding-left: 7%;
     padding-right: 7%;
@@ -194,23 +194,24 @@ body.dark-mode .experience-button-group button{
 /* Tablet screens (between 768px and 1025px wide) */
 @media (min-width: 771px) and (max-width: 1025px) {
   .text-content {
-    text-align: center; /* Center content */
-    margin-left: 0; /* Reset margin */
+    margin-left: 0 auto; /* Reset margin */
     margin-top: 0;
+
   }
 
   .name-header {
-    font-size: 7vw; /* Slightly smaller font for larger screens */
+    font-size: 4vw; /* Slightly smaller font for larger screens */
     text-align: center; 
+    
   }
 
   .title {
-    font-size: 4vw; /* Adjusted for larger screens */
+    font-size: 3vw; /* Adjusted for larger screens */
     text-align: center; 
   }
 
   .little-about {
-    font-size: 20px; /* Fixed typo, now 15px */
+    font-size: 1.8vw; /* Fixed typo, now 15px */
     margin-top: 15px;
     padding-left: 7%; /* Left and right padding */
     padding-right: 7%;
@@ -314,6 +315,7 @@ body.dark-mode .experience-button-group button{
   .singleCol {
     margin: 0 auto;          /* Centers the entire container */
     padding: 0;
+    margin-left: 0 auto; /* Reset margin */
     margin-top: 30px;
     text-align: center; /* Ensure contents are centered */
   }
@@ -349,9 +351,10 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 771px) and (max-width: 1025px) {
   .mynumber {
     text-align: center;
-    font-size:19px;
+    font-size: 2vw;
     margin-top: 30px;
-    margin-left: 0; /* Remove the negative margin to allow proper centering */
+    margin-left: 0 auto; /* Remove the negative margin to allow proper centering */
+    
   }
 }
 
@@ -401,6 +404,8 @@ body.dark-mode .experience-button-group button{
   margin-top: 150px;
 }
 
+
+
 .learnmore{
   font-size: 20px;
   font-weight: bold;
@@ -413,8 +418,38 @@ body.dark-mode .experience-button-group button{
   margin-left: 451px;
   margin-right: 451px;
   text-align: justify;
+  font-weight: bold;
 }
 
+@media (max-width: 770px) {
+  .aboutme-content{
+    font-size: 3.1vw;
+    margin: 0 auto;
+    margin-top: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .aboutme-content{
+    font-size: 1.8vw;
+    margin: 0 auto;
+    margin-top: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px) {
+  .aboutme-content{
+    font-size: 1.1vw;
+    margin: 0 auto;
+    margin-top: 51px;
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}
 
 
 .content3{
@@ -938,7 +973,25 @@ body.dark-mode .experience-button-group button{
 
 .about-container {
   background-color: white; /* Light blue */
-  height: 150vh; /* Full viewport height */
+  height: 100vh; /* Full viewport height */
+}
+
+@media (max-width: 770px){
+  .about-container{
+    height: 160vh;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .about-container{
+    height: 100vh;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px) {
+  .about-container {
+    height: 120vh;
+    }
 }
 
 .experience-container {
