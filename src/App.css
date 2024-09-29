@@ -701,7 +701,7 @@ body.dark-mode .experience-button-group button{
   border-radius: 15px;
   color: black;
   padding: 16px 32px; /* Padding adds space inside the button */
-  min-width: 325px; /* Set a minimum width for the button */
+  min-width: 360px; /* Set a minimum width for the button */
   min-height: 50px; /* Set a minimum height for the button */
   font-size: 3.5vw; /* Use a smaller font size */
   margin: 10px;
@@ -992,6 +992,21 @@ body.dark-mode .experience-button-group button{
 
 }
 
+@media (max-width: 815px) {
+  .contact-content {
+    margin: 0;
+    margin-top: 100px;
+    position: relative; /* Changed from absolute to relative */
+    display: flex; /* Added display flex */
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center content */
+  }
+}
+
+
+
+
+
 .form-row {
   display: flex;
   flex-direction: row; /* Align items horizontally */
@@ -1001,10 +1016,26 @@ body.dark-mode .experience-button-group button{
   
 }
 
+@media (max-width: 815px) {
+  .form-row {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 2rem; /* Adjust gap as needed for smaller screens */
+    
+  }
+}
+
 .form-group {
   flex: 1; /* Allow the input fields to grow and take up space */ 
   max-width: 450px; /* Set a maximum width for the fields */ 
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 815px) {
+  .form-group {
+    max-width: 100%; /* Set a maximum width for the fields */ 
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
 }
 
 
@@ -1023,8 +1054,21 @@ body.dark-mode .experience-button-group button{
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
-  box-sizing: border-box
+  box-sizing: border-box;
 
+}
+
+@media (max-width: 815px) {
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%; /* Adjust width for smaller screens */
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  
+  }
 }
 
 .form-group textarea {
@@ -1039,6 +1083,19 @@ body.dark-mode .experience-button-group button{
   overflow: auto; /* Adds scrollbars if the content exceeds the max-height */
 }
 
+@media (max-width: 815px) {
+  .form-group textarea {
+    width: 92vw; /* Set to a smaller width to maintain center alignment */
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none; /* Allows vertical resizing of the textarea */
+    min-height: 250px; /* Minimum height for the textarea */
+    max-height: 500px; /* Maximum height for the textarea */
+  }
+}
+
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
 .form-group textarea:focus {
@@ -1046,6 +1103,8 @@ body.dark-mode .experience-button-group button{
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+
+
 
 .btn-primary {
   background-color: #088F8F;
@@ -1058,6 +1117,12 @@ body.dark-mode .experience-button-group button{
   margin-left: 10rem;
   border: none;
   border-radius: 25px;
+}
+
+@media (max-width: 815px) {
+  .btn-primary {
+    margin-left: 0;
+  }
 }
 
 .btn-primary:hover {
