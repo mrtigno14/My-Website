@@ -755,6 +755,24 @@ body.dark-mode .experience-button-group button{
   padding: 0; /* Remove padding if any */
 }
 
+@media (max-width: 770px) {
+  .content4{
+    display: flex; /* Use flexbox to align the containers in a row */
+    flex-direction: column; /* Default to column layout for smaller screens */
+    justify-content: space-between; /* Adjust spacing between the containers */
+    align-items: flex-start; /* Align items to the start of the row */
+    gap: 1rem; /* Add space between the containers */
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
+}
+
 .projects-container2 {
   background-color: whitesmoke;
   height: 90vh;
@@ -767,6 +785,22 @@ body.dark-mode .experience-button-group button{
   margin-left: -1275px;
   border: none;
   border-radius: 25px;
+}
+
+@media (max-width: 770px) {
+  .projects-container2{
+    width: 100%; /* Make the containers take full width on smaller screens */
+    margin-left: 0; /* Remove negative margins */
+    margin-top: 20px; /* Adjust top margin for better spacing */
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
 }
 
 .projects-image img{
@@ -834,10 +868,26 @@ body.dark-mode .experience-button-group button{
   background-color: whitesmoke;
   height: 90vh;
   width: 60vh; /* Match the width of other containers */
-  margin-top: -830px; /* Aligns it with projects-container3 */
-  margin-left: 1275px; /* Space between projects-container3 and projects-container4 */
+  margin-top: -830px; 
+  margin-left: 1275px; 
   border: none;
   border-radius: 25px;
+}
+
+@media (max-width: 770px) {
+  .projects-container4{
+    width: 100%; /* Make the containers take full width on smaller screens */
+    margin-left: 0; /* Remove negative margins */
+    margin-top: 20px; /* Adjust top margin for better spacing */
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
 }
 
 .projects-image3 img{
@@ -1176,14 +1226,29 @@ body.dark-mode .experience-button-group button{
 
 
 .projects-container3{
-  background-color: whitesmoke; /* Example background */
-  width: 60vh; /* Adjust width as necessary */
-  height: 90vh; /* Match the height of projects-container2 */
+  background-color: whitesmoke; 
+  width: 60vh; 
+  height: 90vh; 
   margin-top: -829px;
   border: none;
   border-radius: 25px;
 }
 
+@media (max-width: 770px) {
+  .projects-container3 {
+    width: 100%; /* Make the containers take full width on smaller screens */
+    margin-left: 0; /* Remove negative margins */
+    margin-top: 20px; /* Adjust top margin for better spacing */
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
+}
 
 .moreprojectstocome{
   font-size: 69px;
@@ -1287,9 +1352,26 @@ body.dark-mode .experience-button-group button{
   }
 }
 
+
+
 .projects-container {
   background-color: white; /* Light blue */
   height: 175vh; /* Full viewport height */
+}
+
+@media (max-width: 770px) {
+  .projects-container {
+    background-color: white; /* Light blue */
+    height: 350vh; /* Full viewport height */
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
 }
 
 .contact-container {
