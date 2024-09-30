@@ -755,24 +755,6 @@ body.dark-mode .experience-button-group button{
   padding: 0; /* Remove padding if any */
 }
 
-@media (max-width: 770px) {
-  .content4{
-    display: flex; /* Use flexbox to align the containers in a row */
-    flex-direction: column; /* Default to column layout for smaller screens */
-    justify-content: space-between; /* Adjust spacing between the containers */
-    align-items: flex-start; /* Align items to the start of the row */
-    gap: 1rem; /* Add space between the containers */
-  }
-}
-
-@media (min-width: 771px) and (max-width: 1025px) {
-
-}
-
-@media (min-width: 1026px) and (max-width: 1911px){
-
-}
-
 .projects-container2 {
   background-color: whitesmoke;
   height: 90vh;
@@ -785,14 +767,23 @@ body.dark-mode .experience-button-group button{
 
 @media (max-width: 770px) {
   .projects-container2{
-    width: 100%; /* Make the containers take full width on smaller screens */
-    margin-left: 0; /* Remove negative margins */
-    margin-top: 20px; /* Adjust top margin for better spacing */
+    width: 83%; /* Make the containers take full width on smaller screens */
+    margin-left: auto; /* Remove negative margins */
+    margin-right: auto; /* Remove negative margins */
+    margin-top: 100px; /* Adjust top margin for better spacing */
+    height: auto;
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
-
+  .projects-container2{
+    width: 83%; /* Make the containers take full width on smaller screens */
+    margin-left: auto; /* Remove negative margins */
+    margin-right: auto; /* Remove negative margins */
+    margin-top: 100px; /* Adjust top margin for better spacing */
+    margin-bottom: 50px;
+    height: auto;
+  }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
@@ -808,7 +799,25 @@ body.dark-mode .experience-button-group button{
   margin-top: 50px; 
 }
 
+@media (max-width: 770px) {
+  .projects-image img{
+    width: 90%; /* Slightly reduce the width on smaller screens */
+    height: auto;
+    margin-top: 40px;
+  }
+}
 
+@media (min-width: 771px) and (max-width: 1025px) {
+  .projects-image img{
+    width: 90%; /* Slightly reduce the width on smaller screens */
+    height: auto;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
+}
 
 
 
@@ -820,6 +829,25 @@ body.dark-mode .experience-button-group button{
   object-fit:fill; /* Ensures the image covers the container without distortion */
   margin-top: 50px; 
   
+}
+
+@media (max-width: 770px) {
+  .projects-image2 img{
+    width: 90%; /* Slightly reduce the width on smaller screens */
+    height: 35vw;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .projects-image2 img{
+    width: 90%; /* Slightly reduce the width on smaller screens */
+    height: 35vw;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
 }
 
 .prev-button2, .next-button2 {
@@ -871,14 +899,23 @@ body.dark-mode .experience-button-group button{
 
 @media (max-width: 770px) {
   .projects-container4{
-    width: 100%; /* Make the containers take full width on smaller screens */
-    margin-left: 0; /* Remove negative margins */
+    width: 83%; /* Make the containers take full width on smaller screens */
+    margin-left: auto; /* Remove negative margins */
+    margin-right: auto; /* Remove negative margins */
     margin-top: 20px; /* Adjust top margin for better spacing */
+    height: auto;
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
+  .projects-container4{
+    width: 83%; /* Make the containers take full width on smaller screens */
+    margin-left: auto; /* Remove negative margins */
+    margin-right: auto; /* Remove negative margins */
+    margin-top: 20px; /* Adjust top margin for better spacing */
+    height: auto;
 
+  }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
@@ -893,6 +930,24 @@ body.dark-mode .experience-button-group button{
   object-fit:fill; /* Ensures the image covers the container without distortion */
   margin-top: 50px;
   
+}
+
+@media (max-width: 770px) {
+  .projects-image3 img{
+    width: 90%; /* Slightly reduce the width on smaller screens */
+    height: auto;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .projects-image3 img{
+    width: 90%; /* Slightly reduce the width on smaller screens */
+    height: auto;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
 }
 
 .prev-button, .next-button {
@@ -955,9 +1010,29 @@ body.dark-mode .experience-button-group button{
   text-align: justify;
 }
 
+@media (max-width: 770px) {
+  .projects-content4{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .projects-content4{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
+}
+
+
 .tech-stack {
   margin-top: 20px;
 }
+
 
 .tech-icons {
   display: flex;
@@ -969,6 +1044,22 @@ body.dark-mode .experience-button-group button{
   display: flex;
   align-items: center;
   font-size: 24px; /* Size of the icons */
+}
+
+@media (max-width: 770px) {
+  .tech-icon {
+    font-size: 16px; /* Size of the icons */
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .tech-icon {
+    font-size: 16px; /* Size of the icons */
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
 }
 
 .tech-icon svg {
@@ -984,6 +1075,7 @@ body.dark-mode .experience-button-group button{
   justify-content: center;
   gap: 15px; /* Space between buttons */
   margin-top: 20px;
+  margin-bottom: 20px;
   
 }
 
@@ -1202,6 +1294,24 @@ body.dark-mode .experience-button-group button{
   text-align: justify;
 }
 
+@media (max-width: 770px) {
+  .projects-content2{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .projects-content2{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
+}
+
 .projects-content3{
   font-size: 16px;
   margin-left: 50px;
@@ -1211,6 +1321,23 @@ body.dark-mode .experience-button-group button{
   text-align: justify;
 }
 
+@media (max-width: 770px) {
+  .projects-content3{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .projects-content3{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+
+}
 
 
 
@@ -1230,15 +1357,25 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (max-width: 770px) {
-  .projects-container3 {
-    width: 100%; /* Make the containers take full width on smaller screens */
-    margin-left: 0; /* Remove negative margins */
-    margin-top: 20px; /* Adjust top margin for better spacing */
+  .projects-container3{
+    width: 83%; /* Make the containers take full width on smaller screens */
+    margin-left: auto; /* Remove negative margins */
+    margin-right: auto; /* Remove negative margins */
+    margin-top: 75px; /* Adjust top margin for better spacing */
+    height: auto;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
-
+  .projects-container3{
+    width: 83%; /* Make the containers take full width on smaller screens */
+    margin-left: auto; /* Remove negative margins */
+    margin-right: auto; /* Remove negative margins */
+    margin-top: 20px; /* Adjust top margin for better spacing */
+    height: auto;
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
@@ -1362,7 +1499,10 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
-  
+  .projects-container {
+    background-color: white; /* Light blue */
+    height: 330vh; /* Full viewport height */
+  }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
