@@ -777,10 +777,6 @@ body.dark-mode .experience-button-group button{
   background-color: whitesmoke;
   height: 90vh;
   width: 60vh;
-  display: flex;
-  align-items: flex-start; /* Center items vertically */
-  justify-content: flex-start; /* Align items to the left */
-  padding: 0 50px; /* Add horizontal padding if needed */
   margin-top: 100px;
   margin-left: -1275px;
   border: none;
@@ -808,9 +804,8 @@ body.dark-mode .experience-button-group button{
   height: 225px; /* Maintains aspect ratio */
   border-radius: 8px; /* Optional: Rounds the corners of the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a better visual */
-  object-fit: fillr; /* Ensures the image covers the container without distortion */
+  object-fit: fill; /* Ensures the image covers the container without distortion */
   margin-top: 50px; 
-  margin-left: -25px;
 }
 
 
@@ -1200,8 +1195,8 @@ body.dark-mode .experience-button-group button{
 
 .projects-content2{
   font-size: 16px;
-  margin-left: -5px;
-  margin-right: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 5px;
   margin-bottom: 80px;
   text-align: justify;
