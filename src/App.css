@@ -755,6 +755,17 @@ body.dark-mode .experience-button-group button{
   padding: 0; /* Remove padding if any */
 }
 
+@media (min-width: 1026px) and (max-width: 1911px){
+  .content4{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    padding: 0 px; /* Optional horizontal padding */
+  }
+}
+
+
 .projects-container2 {
   background-color: whitesmoke;
   height: 90vh;
@@ -787,7 +798,15 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
+  .projects-container2{
+    position: fixed;
+    height: auto; /* Adjust as needed */
+    width: 31%; /* Adjust width to fit */
+    margin: 0;
+    top: 13.48%;
+    margin-left: -66%;
 
+  }
 }
 
 .projects-image img{
@@ -816,7 +835,11 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .projects-image img{
+    width: 90%; /* Slightly reduce the width on smaller screens */
+    height: 12.4vw;
+    margin-top: 40px;
+  }
 }
 
 
@@ -847,7 +870,11 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .projects-image2 img{
+    width: 90%; /* Slightly reduce the width on smaller screens */
+    height: 12.4vw;
+    margin-top: 40px;
+  }
 }
 
 .prev-button2, .next-button2 {
@@ -872,6 +899,19 @@ body.dark-mode .experience-button-group button{
   top: 520px;
   right: 715px;
 }
+
+
+@media (min-width: 1026px) and (max-width: 1911px){
+  .prev-button2 {
+    top: 9vw;
+    left: 3vw;
+  }
+  .next-button2{
+    top: 9vw;
+    right: 3vw;
+  }
+}
+
 
 .prev-button2:hover, .next-button2:hover {
   background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
@@ -919,7 +959,13 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .projects-container4{
+    position: fixed; /* Fix the element relative to the viewport */
+    top: 42.34%; /* Adjust top position */
+    right: 1.6%; /* Adjust right position */
+    width: 31%; /* Adjust width to fit */
+    height: auto; /* Adjust as needed */
+  }
 }
 
 .projects-image3 img{
@@ -947,7 +993,11 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .projects-image3 img{
+    width: 90%; /* Slightly reduce the width on smaller screens */
+    height: 12.4vw;
+    margin-top: 40px;
+  }
 }
 
 .prev-button, .next-button {
@@ -972,6 +1022,19 @@ body.dark-mode .experience-button-group button{
   top: 530px;
   right: 75px;
 }
+
+@media (min-width: 1026px) and (max-width: 1911px){
+  .prev-button {
+    top: 9vw;
+    left: 3vw;
+  }
+  .next-button{
+    top: 9vw;
+    right: 3vw;
+  }
+}
+
+
 
 .prev-button:hover, .next-button:hover {
   background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
@@ -1025,7 +1088,10 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .projects-content4{
+    font-size: 16px;
+    margin-bottom: 0;
+  }
 }
 
 
@@ -1059,7 +1125,9 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .tech-icon {
+    font-size: 16px; /* Size of the icons */
+  }
 }
 
 .tech-icon svg {
@@ -1309,7 +1377,11 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .projects-content2{
+    font-size: 16px;
+    margin-bottom: 25px;
+    
+  }
 }
 
 .projects-content3{
@@ -1336,7 +1408,10 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .projects-content3{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
 }
 
 
@@ -1379,7 +1454,12 @@ body.dark-mode .experience-button-group button{
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .projects-container3{
+    position: fixed; /* Fix the element relative to the viewport */
+    top: 42.3%; /* Adjust top position */
+    width: 31%; /* Adjust width to fit */
+    height: auto; /* Adjust as needed */
+  }
 }
 
 .moreprojectstocome{
@@ -1387,6 +1467,13 @@ body.dark-mode .experience-button-group button{
   font-weight: bold;
   margin-top: 150px;
 }
+
+@media (min-width: 1026px) and (max-width: 1911px){
+  .moreprojectstocome{
+    margin: 0;
+  }
+}
+
 
 
 
@@ -1501,12 +1588,15 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 771px) and (max-width: 1025px) {
   .projects-container {
     background-color: white; /* Light blue */
-    height: 330vh; /* Full viewport height */
+    height: 345vh; /* Full viewport height */
   }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
-
+  .projects-container {
+    background-color: white; /* Light blue */
+    height: 315vh; /* Full viewport height */
+  }
 }
 
 .contact-container {

@@ -273,14 +273,14 @@ function App() {
 
 
         <div id="projects" className={`projects-container fade-in ${visibleSections.includes('projects') ? 'visible' : ''}`}>
-        <div className="content4">
+        <br></br>
         <div className="experience"> 
         PROJECTS
         </div>
         <div className="seemyjourney">
         HERE ARE SOME OF MY COOL PROJECTS
         </div>
-
+        <div className="content4">
 
         <div className="projects-container2">
         
@@ -398,8 +398,9 @@ function App() {
         <div className="projects-content">
         <div className="projects-image3">
                 <button onClick={handlePrevEcommerceImage} className="prev-button">◀</button>
-                  <img src={ecommerceImages[currentEcommerceImageIndex]} alt={`eCommerce ${currentEcommerceImageIndex + 1}`} />
                 <button onClick={handleNextEcommerceImage} className="next-button">▶</button>
+                  <img src={ecommerceImages[currentEcommerceImageIndex]} alt={`eCommerce ${currentEcommerceImageIndex + 1}`} />
+                
 
                 <div className="image-indicators">
                   {ecommerceImages.map((_, index) => (
@@ -454,13 +455,17 @@ function App() {
 
         </div>
        
-       <div className="moreprojectstocome">
+       
+
+
+        <div className="moreprojectstocome">
         MORE PROJECTS TO COME!!!
       </div>
-
-
-
         </div>
+        
+
+
+
         </div>
 
 
