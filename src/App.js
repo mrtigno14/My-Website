@@ -183,13 +183,13 @@ function App() {
         </div>
 
         <div className="learnmore">
-          LEARN MORE ABOUT ME
+          GET TO KNOW MY BACKGROUND
         </div>
           
         <div className="aboutme-content">
           Hello! I'm Marc Russel Tigno, an aspiring Full-Stack Developer based in Taguig City, Philippines. I'm also a Bachelor of Science in Computer Engineering graduate from Adamson University.<br /><br />
           My journey in web development began during the second semester of my third year in college, when our professor tasked us with creating an eCommerce website as our final project. This experience taught me how to design and develop a website from scratch, including database integration. However, prior to that, I had no particular interest in web development, as my initial plan was to pursue game and application development. But, this experience introduced me to web development, and I realized it was a field I wanted to pursue further. <br /><br />
-          The skills and knowledge I gained during that finals project, along with the insights from an Arbitrum bootcamp, made me realize that web development might be my true calling. Now, I am fully committed to this path, passionate about building and bringing ideas to life. I learned a new passion and am excited to see where it takes me.<br /><br />
+          The skills and knowledge I gained during that finals project, along with the insights from an Arbitrum bootcamp, made me realize that web development might be my true calling. Now, I am fully focused on this path, driven about building and bringing ideas to life. I learned a new passion and am excited to see where it takes me.<br /><br />
           If you're looking to elevate your online presence with creativity and precision, I'm here to make it happen. Let's collaborate and turn your concepts into a reality that stands out!
         </div>
 
@@ -206,7 +206,7 @@ function App() {
       </div>
 
         <div className="seemyjourney">
-          SEE MY JOURNEY
+          VIEW MY JOURNEY
         </div>
 
           <div className="experience-container2">
@@ -278,7 +278,7 @@ function App() {
         PROJECTS
         </div>
         <div className="seemyjourney">
-        HERE ARE SOME OF MY COOL PROJECTS
+        EXPLORE MY COOL CREATIONS
         </div>
         <div className="content4">
 
@@ -460,7 +460,7 @@ function App() {
 
         <div className="moreprojectstocome">
         MORE PROJECTS TO COME!!!
-      </div>
+        </div>
         </div>
         
 
@@ -481,7 +481,7 @@ function App() {
         CONTACT ME
         </div>
         <div className="seemyjourney">
-         AND LET'S GET TO WORK
+         AND LET'S COLLABORATE
         </div>
           <div className="contact-content">
         {formSubmitted ? (
