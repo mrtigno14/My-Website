@@ -116,12 +116,14 @@ body.dark-mode .experience-button-group button{
   margin-top: 25px;
   align-items: center;
   
+  
 }
 
 @media (max-width: 770px) {
   .content {
     flex-direction: column; /* Stack elements on smaller screens */
     margin-top: 100px;
+    margin-bottom: 50px;
   }
 }
 
@@ -129,6 +131,7 @@ body.dark-mode .experience-button-group button{
   .content {
     flex-direction: column; /* Stack elements on smaller screens */
     margin-top: 125px;
+    margin-bottom: 50px;
     
   }
 }
@@ -137,6 +140,7 @@ body.dark-mode .experience-button-group button{
   .content {
     flex-direction: row; /* Stack elements on smaller screens */
     margin-top: -175px;
+    margin-bottom: 50px;
   }
 }
 
@@ -419,6 +423,7 @@ body.dark-mode .experience-button-group button{
   margin-right: 451px;
   text-align: justify;
   font-weight: bold;
+  
 }
 
 @media (max-width: 770px) {
@@ -428,6 +433,7 @@ body.dark-mode .experience-button-group button{
     margin-top: 51px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -438,6 +444,7 @@ body.dark-mode .experience-button-group button{
     margin-top: 51px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -448,6 +455,7 @@ body.dark-mode .experience-button-group button{
     margin-top: 51px;
     padding-left: 400px;
     padding-right: 400px;
+    margin-bottom: 50px;
   }
 }
 
@@ -803,7 +811,7 @@ body.dark-mode .experience-button-group button{
     height: auto; /* Adjust as needed */
     width: 31%; /* Adjust width to fit */
     margin: 0;
-    top: 13.48%;
+
     margin-left: -66%;
 
   }
@@ -961,10 +969,10 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 1026px) and (max-width: 1911px){
   .projects-container4{
     position: fixed; /* Fix the element relative to the viewport */
-    top: 42.34%; /* Adjust top position */
     right: 1.6%; /* Adjust right position */
     width: 31%; /* Adjust width to fit */
     height: auto; /* Adjust as needed */
+    margin: 0;
   }
 }
 
@@ -1456,9 +1464,9 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 1026px) and (max-width: 1911px){
   .projects-container3{
     position: fixed; /* Fix the element relative to the viewport */
-    top: 42.3%; /* Adjust top position */
     width: 31%; /* Adjust width to fit */
     height: auto; /* Adjust as needed */
+    margin: 0;
   }
 }
 
@@ -1466,11 +1474,14 @@ body.dark-mode .experience-button-group button{
   font-size: 69px;
   font-weight: bold;
   margin-top: 150px;
+  
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
   .moreprojectstocome{
     margin: 0;
+    margin-top: 1050px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1496,26 +1507,27 @@ body.dark-mode .experience-button-group button{
 
 .home-container {
   background-color: whitesmoke; /* Light blue */
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Full viewport height */
   display: flex;
 }
 
 @media (max-width: 770px) {
   
 .home-container {
-  height: 120vh;
+  min-height: 120vh;
+
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
   .home-container {
-    height: 130vh;
+    min-height: 130vh;
     }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px) {
   .home-container {
-    height: 140vh;
+    min-height: 140vh;
     }
 }
 
@@ -1524,50 +1536,53 @@ body.dark-mode .experience-button-group button{
 
 .about-container {
   background-color: white; /* Light blue */
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Full viewport height */
 }
 
 @media (max-width: 770px){
   .about-container{
-    height: 160vh;
+    min-height: 160vh;
+    
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
   .about-container{
-    height: 100vh;
+    min-height: 100vh;
     }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px) {
   .about-container {
-    height: 120vh;
+    min-height: 120vh;
     }
 }
 
 .experience-container {
   background-color: whitesmoke; /* Light blue */
-  height: 150vh; /* Full viewport height */
+  min-height: 150vh; /* Full viewport height */
 }
 
 @media (max-width: 770px) {
   .experience-container {
     background-color: whitesmoke; /* Light blue */
-    height: 230vh; /* Full viewport height */
+    min-height: 230vh; /* Full viewport height */
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
   .experience-container {
     background-color: whitesmoke; /* Light blue */
-    height: 210vh; /* Full viewport height */
+    min-height: 210vh; /* Full viewport height */
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
   .experience-container {
     background-color: whitesmoke; /* Light blue */
-    height: 190vh; /* Full viewport height */
+    min-height: 420vh; /* Full viewport height */
   }
 }
 
@@ -1575,45 +1590,89 @@ body.dark-mode .experience-button-group button{
 
 .projects-container {
   background-color: white; /* Light blue */
-  height: 175vh; /* Full viewport height */
+  min-height: 175vh; /* Full viewport height */
 }
 
 @media (max-width: 770px) {
   .projects-container {
     background-color: white; /* Light blue */
-    height: 350vh; /* Full viewport height */
+    min-height: 350vh; /* Full viewport height */
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
   .projects-container {
     background-color: white; /* Light blue */
-    height: 345vh; /* Full viewport height */
+    min-height: 345vh; /* Full viewport height */
+    
   }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
   .projects-container {
     background-color: white; /* Light blue */
-    height: 315vh; /* Full viewport height */
+    min-height: 315vh; /* Full viewport height */
   }
 }
 
 .contact-container {
   background-color: whitesmoke; /* Light blue */
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Full viewport height */
+}
+
+@media (max-width: 770px) {
+  .contact-container {
+    background-color: whitesmoke; /* Light blue */
+    min-height: 100vh; /* Full viewport height */
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .contact-container {
+    background-color: whitesmoke; /* Light blue */
+    min-height: 200vh; /* Full viewport height */
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+  .contact-container {
+    background-color: whitesmoke; /* Light blue */
+    min-height: 250vh; /* Full viewport height */
+
+  }
 }
 
 .bot-navbar-container {
   background-color: white; /* Light blue */
-  height: 10vh; /* Full viewport height */
+  min-height: 10vh; /* Full viewport height */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
 
+@media (max-width: 770px) {
+  .bot-navbar-container {
+    background-color: whitesmoke; /* Light blue */
+    min-height: 8vh; /* Full viewport height */
+  }
+}
 
+@media (min-width: 771px) and (max-width: 1025px) {
+  .bot-navbar-container {
+    background-color: whitesmoke; /* Light blue */
+    min-height: 9vh; /* Full viewport height */
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+  .bot-navbar-container {
+    background-color: whitesmoke; /* Light blue */
+    min-height: 10vh; /* Full viewport height */
+  }
+}
 
 
 
