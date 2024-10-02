@@ -533,10 +533,14 @@ body.dark-mode .experience-button-group button{
 
 @media (min-width: 1026px) and (max-width: 1911px){
   .experience-container2 {
+    position: fixed;
     padding: 75px;
     width: 65%;
-    height: 61.6vw;
+    height: auto;
+    margin: 0;
     margin-left: 5%;
+    top: 22%;
+    
   }
 
 }
@@ -679,10 +683,13 @@ body.dark-mode .experience-button-group button{
 
 @media (min-width: 1026px) and (max-width: 1911px){
   .experience-button-group{
+    position: fixed;
     width: 105%; /* Make sure the button group takes full width */
+    margin: 0;
+    top: 32%;
     margin-left: -8vw;
-    
-    margin-top: -40vw;
+
+
     align-items: flex-end;
     
   }
@@ -811,9 +818,8 @@ body.dark-mode .experience-button-group button{
     height: auto; /* Adjust as needed */
     width: 31%; /* Adjust width to fit */
     margin: 0;
-
     margin-left: -66%;
-
+    top: 22%;
   }
 }
 
@@ -973,6 +979,7 @@ body.dark-mode .experience-button-group button{
     width: 31%; /* Adjust width to fit */
     height: auto; /* Adjust as needed */
     margin: 0;
+    top: 22%;
   }
 }
 
@@ -1467,6 +1474,7 @@ body.dark-mode .experience-button-group button{
     width: 31%; /* Adjust width to fit */
     height: auto; /* Adjust as needed */
     margin: 0;
+    top: 22%;
   }
 }
 
@@ -1480,7 +1488,7 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 1026px) and (max-width: 1911px){
   .moreprojectstocome{
     margin: 0;
-    margin-top: 1050px;
+    margin-top: 1200px;
     margin-bottom: 50px;
   }
 }
@@ -1582,7 +1590,7 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 1026px) and (max-width: 1911px){
   .experience-container {
     background-color: whitesmoke; /* Light blue */
-    min-height: 420vh; /* Full viewport height */
+    min-height: 620vh; /* Full viewport height */
   }
 }
 
@@ -1639,7 +1647,7 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 1026px) and (max-width: 1911px){
   .contact-container {
     background-color: whitesmoke; /* Light blue */
-    min-height: 250vh; /* Full viewport height */
+    min-height: 410vh; /* Full viewport height */
 
   }
 }
