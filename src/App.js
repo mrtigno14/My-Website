@@ -199,15 +199,16 @@ function App() {
 
 
       <div id="experience" className={`experience-container fade-in ${visibleSections.includes('experience') ? 'visible' : ''}`}>
-      <div className="content3"> 
-
-      <div className="experience"> 
-        EXPERIENCE
-      </div>
-
+        <br></br>
+        <div className="experience2"> 
+          EXPERIENCE
+        </div>
         <div className="seemyjourney">
           VIEW MY JOURNEY
         </div>
+      <div className="content3"> 
+
+     
 
           <div className="experience-container2">
           <div className="experience-image" style={{ display: showImage ? 'block' : 'none' }}>
@@ -280,6 +281,7 @@ function App() {
         <div className="seemyjourney">
         EXPLORE MY COOL CREATIONS
         </div>
+
         <div className="content4">
 
         <div className="projects-container2">
@@ -507,15 +509,12 @@ function App() {
             </div>
             <input type="hidden" name="to_name" value="Marc Russel Tigno" />
             <button type="submit" className="btn btn-primary">Send Message</button>
-          </form>
-        )}
-      </div>
-          
-
-
-
-      
+            </form>
+              )}
+            </div>
         </div>
+
+        
         </div>
 
 

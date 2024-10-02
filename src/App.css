@@ -7,9 +7,10 @@ html, body {
 
 /* Ensure all elements fit within the viewport */
 * {
-  box-sizing: border-box; /* Include padding and borders in the element's width/height */
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Include padding and borders in the element's width/height */
+
 }
 
 .App {
@@ -479,10 +480,22 @@ body.dark-mode .experience-button-group button{
   }
 }
 
-
+@media (min-width: 1026px) and (max-width: 1911px){
+  .content3{
+    margin-bottom: 20px;
+  }
+}
 
 
 .experience{
+  font-size: 55px;
+  font-weight: bold;
+  margin: 0;
+  margin-top:150px;
+  align-items: center; /* Center items vertically */
+}
+
+.experience2{
   font-size: 55px;
   font-weight: bold;
   margin: 0;
@@ -539,7 +552,7 @@ body.dark-mode .experience-button-group button{
     height: auto;
     margin: 0;
     margin-left: 5%;
-    top: 22%;
+    top: 27%;
     
   }
 
@@ -686,7 +699,7 @@ body.dark-mode .experience-button-group button{
     position: fixed;
     width: 105%; /* Make sure the button group takes full width */
     margin: 0;
-    top: 32%;
+    top: 42%;
     margin-left: -8vw;
 
 
@@ -819,7 +832,7 @@ body.dark-mode .experience-button-group button{
     width: 31%; /* Adjust width to fit */
     margin: 0;
     margin-left: -66%;
-    top: 22%;
+    top: 20%;
   }
 }
 
@@ -915,6 +928,29 @@ body.dark-mode .experience-button-group button{
 }
 
 
+@media (max-width: 770px) {
+  .prev-button2 {
+    top: 275vw;
+    left: 15vw;
+    display: none;
+    
+  }
+  .next-button2{
+    top: 275vw;
+    right: 15vw;
+    display: none;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .prev-button2 {
+    display: none;
+  }
+  .next-button2{
+    display: none;
+  }
+}
+
 @media (min-width: 1026px) and (max-width: 1911px){
   .prev-button2 {
     top: 9vw;
@@ -979,7 +1015,7 @@ body.dark-mode .experience-button-group button{
     width: 31%; /* Adjust width to fit */
     height: auto; /* Adjust as needed */
     margin: 0;
-    top: 22%;
+    top: 20%;
   }
 }
 
@@ -1029,13 +1065,31 @@ body.dark-mode .experience-button-group button{
 }
 
 .prev-button {
-  top: 525px;
+  top: 520px;
   left: 1350px;
 }
 
 .next-button {
-  top: 530px;
+  top: 520px;
   right: 75px;
+}
+
+@media (max-width: 770px) {
+  .prev-button {
+    display: none;
+  }
+  .next-button{
+    display: none;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .prev-button {
+    display: none;
+  }
+  .next-button{
+    display: none;
+  }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
@@ -1223,6 +1277,11 @@ body.dark-mode .experience-button-group button{
   }
 }
 
+@media (min-width: 1026px) and (max-width: 1911px){
+  .contact-content {
+
+  }
+}
 
 
 
@@ -1342,6 +1401,24 @@ body.dark-mode .experience-button-group button{
 @media (max-width: 815px) {
   .btn-primary {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .btn-primary {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .btn-primary {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1911px){
+  .btn-primary {
+    margin-bottom: 50px;
   }
 }
 
@@ -1474,7 +1551,7 @@ body.dark-mode .experience-button-group button{
     width: 31%; /* Adjust width to fit */
     height: auto; /* Adjust as needed */
     margin: 0;
-    top: 22%;
+    top: 20%;
   }
 }
 
@@ -1483,6 +1560,18 @@ body.dark-mode .experience-button-group button{
   font-weight: bold;
   margin-top: 150px;
   
+}
+
+@media (max-width: 770px) {
+  .moreprojectstocome{
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1025px) {
+  .moreprojectstocome{
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
@@ -1590,7 +1679,7 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 1026px) and (max-width: 1911px){
   .experience-container {
     background-color: whitesmoke; /* Light blue */
-    min-height: 620vh; /* Full viewport height */
+    min-height: 180vh; /* Full viewport height */
   }
 }
 
@@ -1619,38 +1708,44 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 1026px) and (max-width: 1911px){
   .projects-container {
     background-color: white; /* Light blue */
-    min-height: 315vh; /* Full viewport height */
+    min-height: 240vh; /* Full viewport height */
   }
 }
 
 .contact-container {
   background-color: whitesmoke; /* Light blue */
-  min-height: 100vh; /* Full viewport height */
+  min-height: calc(100vh - 10vh); /* Reduce height by navbar height */
+  padding-bottom: 0; /* Remove padding-bottom to avoid extra space */
+  position: relative; /* Ensure space for the bot-navbar */
+  
 }
 
 @media (max-width: 770px) {
   .contact-container {
     background-color: whitesmoke; /* Light blue */
     min-height: 100vh; /* Full viewport height */
-    margin-bottom: 25px;
+
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
   .contact-container {
     background-color: whitesmoke; /* Light blue */
-    min-height: 200vh; /* Full viewport height */
-    margin-bottom: 25px;
+    min-height: calc(100vh - 10vh);
+
   }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
   .contact-container {
     background-color: whitesmoke; /* Light blue */
-    min-height: 410vh; /* Full viewport height */
-
+    min-height: calc(100vh - 8vh);
+    display: flex; /* Allows for flexible layout */
+    flex-direction: column; /* Stack children vertically */
+    
   }
 }
+
 
 .bot-navbar-container {
   background-color: white; /* Light blue */
@@ -1658,7 +1753,10 @@ body.dark-mode .experience-button-group button{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 25px 20px;
+  width: 100%;
+  position: absolute;
+
 }
 
 @media (max-width: 770px) {
@@ -1679,6 +1777,7 @@ body.dark-mode .experience-button-group button{
   .bot-navbar-container {
     background-color: whitesmoke; /* Light blue */
     min-height: 10vh; /* Full viewport height */
+
   }
 }
 
