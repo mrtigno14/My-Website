@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
 
 /* Prevent horizontal scrolling */
 html, body {
@@ -514,9 +520,6 @@ body.dark-mode .experience-button-group button{
   background-color: white;
   height: 75vh;
   width: 100vh;
-  display: flex;
-  align-items: flex-start; /* Center items vertically */
-  justify-content: flex-start; /* Align items to the left */
   padding: 0 50px; /* Add horizontal padding if needed */
   margin-top: 100px;
   margin-left: 200px;
@@ -530,7 +533,7 @@ body.dark-mode .experience-button-group button{
     padding: 50px;
     width: 91%;
     margin-left: 0;
-    height: 179vw; /* Let the container height adjust based on its content */
+    height: auto; /* Let the container height adjust based on its content */
   }
 }
 
@@ -539,7 +542,7 @@ body.dark-mode .experience-button-group button{
     padding: 75px;
     width: 91%;
     margin-left: 0;
-    height: 111vw; /* Let the container height adjust based on its content */
+    height: auto; /* Let the container height adjust based on its content */
   }
 
 }
@@ -1258,174 +1261,85 @@ body.dark-mode .experience-button-group button{
   padding: 0; /* Remove padding if any */
 }
 
-.contact-content{
-  margin: 0;
-  margin-top: 350px;
-  position: absolute;
-  margin-left: -10rem;
-
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 815px) {
   .contact-content {
-    margin: 0;
-    margin-top: 100px;
-    position: relative; /* Changed from absolute to relative */
-    display: flex; /* Added display flex */
-    flex-direction: column; /* Stack vertically */
-    align-items: center; /* Center content */
-  }
-}
 
-@media (min-width: 1026px) and (max-width: 1911px){
-  .contact-content {
 
   }
 }
 
-
-
+form {
+  width: 100%;
+  max-width: 1000px; /* Increase the width of the form */
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
 
 .form-row {
   display: flex;
-  flex-direction: row; /* Align items horizontally */
-  justify-content: center; /* Center items horizontally */
-  gap: 11rem; /* Adjust gap as needed for spacing between fields */
-  margin-bottom: 1rem;
-  
-}
-
-@media (max-width: 815px) {
-  .form-row {
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 2rem; /* Adjust gap as needed for smaller screens */
-    
-  }
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .form-group {
-  flex: 1; /* Allow the input fields to grow and take up space */ 
-  max-width: 450px; /* Set a maximum width for the fields */ 
-  margin-bottom: 1.5rem;
+  flex: 1;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  min-width: 350px; /* Increase the minimum width of each form field */
 }
 
-@media (max-width: 815px) {
-  .form-group {
-    max-width: 100%; /* Set a maximum width for the fields */ 
-    margin-bottom: 1.5rem;
-    align-items: center;
-  }
-}
-
-
-
-.form-control::placeholder {
-  color: #888; /* Placeholder text color */
-  font-size: 0.875rem; /* Adjust font size for placeholder text */
-}
-
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
-  width: 175%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
+.form-control {
+  width: 100%; /* Keep the textboxes responsive */
+  padding: 10px;
+  font-size: 16px;
   box-sizing: border-box;
-
-}
-
-@media (max-width: 815px) {
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
-    width: 100%; /* Adjust width for smaller screens */
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-  
-  }
-}
-
-.form-group textarea {
-  width: 167%;
-  padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem;
-  resize: none; /* Allows vertical resizing of the textarea */
-  min-height: 150px; /* Minimum height for the textarea */
-  max-height: 500px; /* Maximum height for the textarea */
-  overflow: auto; /* Adds scrollbars if the content exceeds the max-height */
+  max-width: 800px; /* Increase the max width of the textboxes */
+  outline: none; /* Remove the default focus outline */
 }
 
-@media (max-width: 815px) {
-  .form-group textarea {
-    width: 92vw; /* Set to a smaller width to maintain center alignment */
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    resize: none; /* Allows vertical resizing of the textarea */
-    min-height: 250px; /* Minimum height for the textarea */
-    max-height: 500px; /* Maximum height for the textarea */
-  }
+.form-control:focus {
+  border-color: #B2E0E0; /* Change to your preferred focus color */
+  box-shadow: 0 0 5px rgba(178, 224, 224, 0.6); /* Greenish shadow effect */
 }
 
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
-.form-group textarea:focus {
-  border-color: #088F8F;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+textarea.form-control {
+  resize: none;
+  max-width: 800px; /* Keep textarea width in line with other inputs */
 }
 
-
-
-.btn-primary {
+button.btn-primary {
+  padding: 10px 20px;
+  font-size: 18px;
   background-color: #088F8F;
-  border-color: #088F8F;
   color: white;
-  padding: 0.75rem 1.25rem;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 25px;
-  margin-left: 10rem;
   border: none;
   border-radius: 25px;
+  cursor: pointer;
+  margin-top: 25px;
+  width: auto;
+  transition: background-color 0.3s ease;
 }
 
-@media (max-width: 815px) {
-  .btn-primary {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 770px) {
-  .btn-primary {
-    margin-bottom: 50px;
-  }
-}
-
-@media (min-width: 771px) and (max-width: 1025px) {
-  .btn-primary {
-    margin-bottom: 50px;
-  }
-}
-
-@media (min-width: 1026px) and (max-width: 1911px){
-  .btn-primary {
-    margin-bottom: 50px;
-  }
-}
-
-.btn-primary:hover {
+button.btn-primary:hover {
   background-color: #066B6B;
   border-color: #B2E0E0;
 }
+
+
+
+
+
+
 
 
 
@@ -1663,7 +1577,7 @@ body.dark-mode .experience-button-group button{
 @media (max-width: 770px) {
   .experience-container {
     background-color: whitesmoke; /* Light blue */
-    min-height: 230vh; /* Full viewport height */
+    min-height: 225vh; /* Full viewport height */
     margin-bottom: 50px;
   }
 }
@@ -1671,7 +1585,7 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 771px) and (max-width: 1025px) {
   .experience-container {
     background-color: whitesmoke; /* Light blue */
-    min-height: 210vh; /* Full viewport height */
+    min-height: 200vh; /* Full viewport height */
     margin-bottom: 50px;
   }
 }
@@ -1679,7 +1593,7 @@ body.dark-mode .experience-button-group button{
 @media (min-width: 1026px) and (max-width: 1911px){
   .experience-container {
     background-color: whitesmoke; /* Light blue */
-    min-height: 180vh; /* Full viewport height */
+    min-height: 175vh; /* Full viewport height */
   }
 }
 
@@ -1714,10 +1628,11 @@ body.dark-mode .experience-button-group button{
 
 .contact-container {
   background-color: whitesmoke; /* Light blue */
-  min-height: calc(100vh - 10vh); /* Reduce height by navbar height */
-  padding-bottom: 0; /* Remove padding-bottom to avoid extra space */
-  position: relative; /* Ensure space for the bot-navbar */
-  
+  width: 100%;
+  max-width: auto; /* Limit the maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box;
 }
 
 @media (max-width: 770px) {
@@ -1761,21 +1676,21 @@ body.dark-mode .experience-button-group button{
 
 @media (max-width: 770px) {
   .bot-navbar-container {
-    background-color: whitesmoke; /* Light blue */
+    background-color: white; /* Light blue */
     min-height: 8vh; /* Full viewport height */
   }
 }
 
 @media (min-width: 771px) and (max-width: 1025px) {
   .bot-navbar-container {
-    background-color: whitesmoke; /* Light blue */
+    background-color: white; /* Light blue */
     min-height: 9vh; /* Full viewport height */
   }
 }
 
 @media (min-width: 1026px) and (max-width: 1911px){
   .bot-navbar-container {
-    background-color: whitesmoke; /* Light blue */
+    background-color: white; /* Light blue */
     min-height: 10vh; /* Full viewport height */
 
   }

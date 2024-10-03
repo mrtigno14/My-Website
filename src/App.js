@@ -477,45 +477,37 @@ function App() {
 
 
 
-        <div id="contact" className={`contact-container fade-in ${visibleSections.includes('contact') ? 'visible' : ''}`}>
-        <div className="content5">
-        <div className="experience">
-        CONTACT ME
-        </div>
-        <div className="seemyjourney">
-         AND LET'S COLLABORATE
-        </div>
-          <div className="contact-content">
-        {formSubmitted ? (
-          <div>Thank you for your message! I'll get back to you soon.</div>
-        ) : (
-          <form onSubmit={sendEmail}>
-            <div className="form-row">
+        <div id="contact" className="contact-container">
+  <div className="content5">
+    <div className="experience">
+      CONTACT ME
+    </div>
+    <div className="seemyjourney">
+      AND LET'S COLLABORATE
+    </div>
+    <div className="contact-content">
+      {formSubmitted ? (
+        <div>Thank you for your message! I'll get back to you soon.</div>
+      ) : (
+        <form onSubmit={sendEmail}>
+          <div className="form-row">
             <div className="form-group">
-              
               <input type="text" name="from_name" className="form-control" placeholder="Enter your name" required />
             </div>
             <div className="form-group">
-              
               <input type="email" name="from_email" className="form-control" placeholder="Enter your email" required />
             </div>
-            </div>
-
-
-            
-            <div className="form-group">
-              
-              <textarea name="message" className="form-control" rows="5" placeholder="Enter your message" required></textarea>
-            </div>
-            <input type="hidden" name="to_name" value="Marc Russel Tigno" />
-            <button type="submit" className="btn btn-primary">Send Message</button>
-            </form>
-              )}
-            </div>
-        </div>
-
-        
-        </div>
+          </div>
+          <div className="form-group">
+            <textarea name="message" className="form-control" rows="5" placeholder="Enter your message" required></textarea>
+          </div>
+          <input type="hidden" name="to_name" value="Marc Russel Tigno" />
+          <button type="submit" className="btn btn-primary">Send Message</button>
+        </form>
+      )}
+    </div>
+  </div>
+</div>
 
 
 
