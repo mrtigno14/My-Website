@@ -131,7 +131,7 @@ function App() {
         <div className="text-content">
           
           <div className="name-header">
-            
+            Marc Russel Tigno
           </div>
 
           <div className="title">
