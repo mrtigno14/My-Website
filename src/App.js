@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import emailjs from 'emailjs-com';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faLaptop, faScrewdriver } from '@fortawesome/free-solid-svg-icons';
+import { faLaptop, faScrewdriver, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { faCss3Alt, faPhp, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 
 import Navbar from './components/Navbar';
@@ -17,7 +17,9 @@ function App() {
   const [showImage, setShowImage] = useState('/pnxlogo.png');
   const [currentEcommerceImageIndex, setCurrentEcommerceImageIndex] = useState(0);
   const [currentDatabaseImageIndex, setCurrentDatabaseImageIndex] = useState(0);
-  const [formSubmitted, setFormSubmitted] = useState(false); // State for form submission
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formError, setFormError] = useState(false);
+  const experienceRef = useRef(null);
 
 
   const handleRoleChange = (role) => {
@@ -26,8 +28,13 @@ function App() {
       setShowImage('/pnxlogo.png');
     } else if (role === 'Freelance Technician') {
       setShowImage('/freelancetech.png'); // Replace with the path to your second image
+    } else if (role === 'IT Desktop Support') {
+      setShowImage('/bountyfresh.png');
     }
 
+    if (experienceRef.current) {
+      experienceRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   const ecommerceImages = [
@@ -107,11 +114,11 @@ function App() {
     e.preventDefault();
 
     emailjs.sendForm('service_jz2jora', 'template_dsci81f', e.target, 'Rxwl5I6wVQW3Gvqy6')
-      .then((result) => {
-        console.log(result.text);
-        setFormSubmitted(true); // Show form success message
-      }, (error) => {
-        console.log(error.text);
+      .then(() => {
+        setFormSubmitted(true);
+        setFormError(false);
+      }, () => {
+        setFormError(true);
       });
   };
   
@@ -139,10 +146,8 @@ function App() {
           </div>
 
           <div className="little-about">
-            My name is Marc Russel Tigno, a Computer Engineering graduate from Adamson University. <br></br>
-            I specialize in PC assembly and troubleshooting, alongside creating innovative software and websites.<br></br>
-            I am constantly improving my skills in JavaScript, C#, and Python to stay with the latest trends in technology.<br></br>
-            Additionally, I focus on building experiences with every project I undertake.
+            With a background in web development and PC hardware, I'm now pursuing my true passion in game development.
+            I'm currently learning Unity to build my first game, a horror title inspired by my lifelong love of gaming.
           </div>
 
           <div className="singleCol social-media-icons">
@@ -154,9 +159,6 @@ function App() {
             </a>
           </div>
 
-          <div className="mynumber">
-          Message/Call: +63 995 558 7475
-          </div>
 
         </div>
         
@@ -187,10 +189,10 @@ function App() {
         </div>
           
         <div className="aboutme-content">
-          Hello! I'm Marc Russel Tigno, an aspiring Full-Stack Developer based in Taguig City, Philippines. I'm also a Bachelor of Science in Computer Engineering graduate from Adamson University.<br /><br />
-          My journey in web development began during the second semester of my third year in college, when our professor tasked us with creating an eCommerce website as our final project. This experience taught me how to design and develop a website from scratch, including database integration. However, prior to that, I had no particular interest in web development, as my initial plan was to pursue game and application development. But, this experience introduced me to web development, and I realized it was a field I wanted to pursue further. <br /><br />
-          The skills and knowledge I gained during that finals project, along with the insights from an Arbitrum bootcamp, made me realize that web development might be my true calling. Now, I am fully focused on this path, driven about building and bringing ideas to life. I learned a new passion and am excited to see where it takes me.<br /><br />
-          If you're looking to elevate your online presence with creativity and precision, I'm here to make it happen. Let's collaborate and turn your concepts into a reality that stands out!
+          Hello! I'm Marc Russel Tigno, a Computer Engineering graduate from Adamson University based in Taguig City, Philippines.<br /><br />
+          Gaming has been a core part of who I am since childhood. I'd spend hours on my old laptop or lose track of time entirely at the local computer cafe, to the point where my mom would have to physically drag me out and give me a full sermon on the way home. Those are some of my favorite memories.<br /><br />
+          My love for horror games goes back to watching PewDiePie's playthroughs. His reactions had a way of taking the edge off the scariest moments, making horror feel exciting rather than overwhelming. That balance of tension and entertainment stuck with me, and it's a big reason why my first game will be a horror title.<br /><br />
+          I'm currently learning Unity and actively building that game. Alongside that, I have a background in web development and have built projects like an eCommerce site from scratch. I'm driven by a simple goal: to create experiences that stick with people the way games have always stuck with me.
         </div>
 
       </div>
@@ -210,16 +212,37 @@ function App() {
 
      
 
-          <div className="experience-container2">
+          <div className="experience-container2" ref={experienceRef}>
           <div className="experience-image" style={{ display: showImage ? 'block' : 'none' }}>
-            <img src={showImage} alt={activeRole === 'IT Intern' ? 'Phoenix Petroleum logo' : 'Freelance Technician related image'} />
+            <img src={showImage} style={activeRole === 'IT Desktop Support' ? { width: '120px' } : undefined} alt={activeRole === 'IT Intern' ? 'Phoenix Petroleum logo' : activeRole === 'IT Desktop Support' ? 'Bounty Fresh Food logo' : 'Freelance Technician related image'} />
           </div>
+          {activeRole === 'IT Desktop Support' && (
+
+          <div className="experience-content">
+            <div className="experience-content2">
+            <h1><b>IT Desktop Support</b></h1>
+            <b>Bounty Fresh Food, Inc.</b>
+            <br></br>
+            <p>June 2025 – October 2025</p>
+            <br></br>
+            </div>
+            <p><b>Responsibilities and Duties:</b></p>
+            <p>• Served as the primary IT contact, providing Level 1–2 hardware, software, and network support while resolving tickets through an in-house ticketing system and meeting SLA requirements.</p>
+            <p>• Deployed, configured, and supported IT hardware including desktops, laptops, printers, and event support equipment ensuring proper functionality and readiness.</p>
+            <p>• Managed IT asset inventory, including tracking deployed, spare, and borrowed units, warranties, and software licenses using an in-house asset management system.</p>
+            <p>• Escalated and coordinated Tier 3 issues with cross-functional teams, handling Active Directory administration (user accounts, permissions, GPOs) and network troubleshooting (TCP/IP, DNS, VPN).</p>
+            <p>• Provided technical support for executives and VIPs, including meeting room setup and on-site technical assistance for corporate events.</p>
+            <p>• Assessed departmental IT needs and recommended hardware and peripherals to support business operations.</p>
+          </div>
+
+          )}
+
           {activeRole === 'IT Intern' && (
             
           <div className="experience-content">
             <div className="experience-content2">
-            <h1><b>IT Intern (Service Desk/End user Computing Lead)</b></h1>
-            <b>Phoenix Petroleum Philippines</b>
+            <h1><b>IT Intern</b></h1>
+            <b>Phoenix Petroleum Philippines, Inc.</b>
             <br></br>
             <p>July 2024 - September 2024</p>
             <br></br>
@@ -256,6 +279,8 @@ function App() {
           </div>
 
           <div className="experience-button-group">
+        <button onClick={() => handleRoleChange('IT Desktop Support')}>
+        <FontAwesomeIcon icon={faDesktop} />&nbsp;IT Desktop Support</button><br></br>
         <button onClick={() => handleRoleChange('IT Intern')}>
         <FontAwesomeIcon icon={faLaptop} />&nbsp;IT Intern</button><br></br>
         <button onClick={() => handleRoleChange('Freelance Technician')}>
@@ -461,7 +486,7 @@ function App() {
 
 
         <div className="moreprojectstocome">
-        MORE PROJECTS TO COME!!!
+        More projects coming soon.
         </div>
         </div>
         
@@ -490,6 +515,9 @@ function App() {
         <div>Thank you for your message! I'll get back to you soon.</div>
       ) : (
         <form onSubmit={sendEmail}>
+          {formError && (
+            <div style={{ color: 'red', marginBottom: '10px' }}>Something went wrong. Please try again.</div>
+          )}
           <div className="form-row">
             <div className="form-group">
               <input type="text" name="from_name" className="form-control" placeholder="Enter your name" required />
@@ -514,7 +542,7 @@ function App() {
 
         <div className="bot-navbar-container">
           <div className="nav-left">
-          Copyright © 2024. All rights are reserved
+          Copyright © 2026. All rights are reserved
           </div>
 
           <div className="social-media-icons">

@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-logo">Mtigno14</div>
+        <div className="navbar-logo"></div>
         <div className="navbar-right">
           <button className="toggle-button" onClick={toggleMenu}>
             <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
