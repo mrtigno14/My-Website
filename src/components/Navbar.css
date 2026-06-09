@@ -24,7 +24,8 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  position: relative; /* For positioning */
+  position: relative;
+  gap: 16px;
 }
 
 .navbar-links {
