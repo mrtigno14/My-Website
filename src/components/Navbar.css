@@ -77,7 +77,7 @@
       display: none; /* Hide links by default on small screens */
       flex-direction: column; /* Stack links vertically */
       position: fixed; /* Fixed position for fullscreen */
-      top: 90px; /* Align to the top */
+      top: 70px;
       left: 0; /* Align to the left */
       background-color: rgba(22, 22, 22, 0.95); /* Slightly transparent background */
       width: 100%; /* Full width */
