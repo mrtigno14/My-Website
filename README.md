@@ -1,3 +1,11 @@
+# Marc Russel Tigno — Portfolio
+
+**Live site:** [https://mrtigno.vercel.app/](https://mrtigno.vercel.app/)
+
+Personal portfolio built with React (Create React App) and deployed on [Vercel](https://vercel.com), which automatically redeploys on every push to the `master` branch.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
