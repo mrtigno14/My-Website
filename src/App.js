@@ -12,9 +12,9 @@ import Navbar from './components/Navbar';
 
 
 function App() { 
-  const [activeRole, setActiveRole] = useState('IT Intern');
+  const [activeRole, setActiveRole] = useState('IT Desktop Support');
   const [visibleSections, setVisibleSections] = useState([]);
-  const [showImage, setShowImage] = useState('/pnxlogo.png');
+  const [showImage, setShowImage] = useState('/bountyfresh.png');
   const [currentEcommerceImageIndex, setCurrentEcommerceImageIndex] = useState(0);
   const [currentDatabaseImageIndex, setCurrentDatabaseImageIndex] = useState(0);
   const [formSubmitted, setFormSubmitted] = useState(false);
