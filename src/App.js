@@ -190,9 +190,9 @@ function App() {
         </div>
           
         <div className="aboutme-content">
-          Hello! I'm Marc Russel Tigno, a Computer Engineering graduate from Adamson University based in Taguig City, Philippines.<br /><br />
-          Gaming has been a core part of who I am since childhood. I'd spend hours on my old laptop or lose track of time entirely at the local computer cafe, to the point where my mom would have to physically drag me out and give me a full sermon on the way home. Those are some of my favorite memories.<br /><br />
-          My love for horror games goes back to watching PewDiePie's playthroughs. His reactions had a way of taking the edge off the scariest moments, making horror feel exciting rather than overwhelming. That balance of tension and entertainment stuck with me, and it's a big reason why my first game will be a horror title.<br /><br />
+          Hello! I'm Marc Russel Tigno, a Computer Engineering graduate from Adamson University based in the Philippines.<br /><br />
+          Gaming has been a part of me since childhood. I'd spend hours playing on my PSP that is a gift from my dad, or on my old potato laptop, and I'd lose track of time entirely at the local computer cafe, to the point where my mom would have to physically drag me out and give me a full sermon on the way home. Those are some of my favorite memories.<br /><br />
+          I really enjoyed watching PewDiePie growing up, especially his horror playthroughs, and that's what inspired me to make my first game a horror title. Making my own game was actually a dream of mine since I was young, so I tried building one myself, but it didn't go well. I had no idea how complex game development really was and thought it would be a lot simpler than it actually is. These days, I still hold on to that same dream, and everything I've learned in university has given me the foundation I was missing back then. It'll take time, but I have the determination to see it through and make my younger self proud.<br /><br />
           I'm currently learning Unity and actively building that game. Alongside that, I have a background in web development and have built projects like an eCommerce site from scratch. I'm driven by a simple goal: to create experiences that stick with people the way games have always stuck with me.
         </div>
 
