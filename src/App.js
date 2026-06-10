@@ -117,7 +117,8 @@ function App() {
       .then(() => {
         setFormSubmitted(true);
         setFormError(false);
-      }, () => {
+      }, (error) => {
+        console.error('EmailJS error:', error);
         setFormError(true);
       });
   };
@@ -331,10 +332,10 @@ function App() {
               <center><h5><b>Tech Stack</b></h5></center>
               <div className="tech-icons">
                 <div className="tech-icon">
-                  <img src="/typescript.svg" alt="Solidity" style={{ width: '30px', height: '30px' }} />&nbsp;TypeScript
+                  <span className="tech-icon-badge"><img src="/typescript.svg" alt="TypeScript" /></span>TypeScript
                 </div>
                 <div className="tech-icon">
-                  <img src="/solidity.svg" alt="Solidity" style={{ width: '30px', height: '30px' }} />&nbsp;Solidity
+                  <span className="tech-icon-badge"><img src="/solidity.svg" alt="Solidity" /></span>Solidity
                 </div>
                 
               </div><div className="tech-icons">             
@@ -396,7 +397,7 @@ function App() {
               <center><h5><b>Tech Stack</b></h5></center>
               <div className="tech-icons">
                 <div className="tech-icon">
-                <img src="/csharp.svg" alt="C#" style={{ width: '30px', height: '30px' }} />&nbsp;C Sharp
+                <span className="tech-icon-badge"><img src="/csharp.svg" alt="C#" /></span>C Sharp
                 </div>
                 
                 </div>
